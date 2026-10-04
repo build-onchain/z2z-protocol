@@ -31,6 +31,29 @@ pnpm preview --port 4173
 
 Landing verification: `pnpm build` and `pnpm exec tsc --noEmit`; Chromium smoke covers responsive layouts, 200% text reflow, theme persistence/system preference/storage denial, mobile menu keyboard/navigation, native FAQ, and readable no-JavaScript content. These checks do not qualify the protocol for financial use.
 
+## Vercel deployment
+
+This is a **TanStack Start SSR app**, not a static Vite SPA. `nitro()` in `vite.config.ts` generates the hosting adapter; `vercel.json` selects the `tanstack-start` framework. On Vercel the generated Build Output API directory is `.vercel/output`, including static assets, request routing, and the SSR function. Publishing `dist` or `dist/client` alone cannot serve the homepage: neither contains a static `index.html`.
+
+Project Settings → Build and Deployment:
+
+- Framework Preset: **TanStack Start**, not Vite. The committed `vercel.json` also selects this preset.
+- Build Command: `pnpm build`.
+- Install Command: `pnpm install --frozen-lockfile` (`pnpm install` also works).
+- Output Directory: leave the override **off**; do not force `dist` or `dist/client`.
+- Node.js: **24.x**, matching the verified local runtime.
+- Root Directory: the directory containing this `package.json` and `vite.config.ts` (repository root).
+
+The Nitro preset is auto-detected on Vercel. To inspect the Vercel artifacts locally without deploying:
+
+```bash
+NITRO_PRESET=vercel pnpm build
+```
+
+Ordinary `pnpm build` uses the local Node preset and writes `.output`; `pnpm preview --port 4173` remains the local preview command. Generated `.output` and `.vercel` files are ignored. After committing these configuration/dependency changes and pushing them yourself, deploy the updated source; redeploying an older commit cannot include the adapter. Verify `/` renders the landing and the referenced `/assets/`, `/art/`, and `/brand/` resources load. No deployment is performed by these local checks.
+
+Sources (retrieved 2026-10-04): [Vercel TanStack Start setup](https://vercel.com/docs/frameworks/full-stack/tanstack-start), [Vercel deployment and framework detection guide](https://vercel.com/kb/guide/deploy-a-tanstack-start-app-to-vercel).
+
 ## Styling
 
 This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
