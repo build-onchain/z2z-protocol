@@ -1,8 +1,8 @@
 # Z2Z — Đặc tả giao diện Renaissance Exchange
 
-> **Landing đã implementation; trading workspace vẫn là đề xuất, chưa release qualification.** Z2Z là tên sản phẩm dự kiến, không đặt thêm expansion. Tài liệu định nghĩa cách trình bày và phối hợp quyền theo từng route; không tạo quyền tiền, API, circuit, subsystem hoặc deployment mới.
+> **Landing redesign và Agreement landscape đã authorize/implemented; trading workspace vẫn là đề xuất, chưa release qualification.** Z2Z là tên sản phẩm dự kiến, không đặt thêm expansion. Tài liệu định nghĩa cách trình bày và phối hợp quyền theo từng route; không tạo quyền tiền, financial API, circuit, subsystem hoặc deployment mới.
 >
-> **Hiện trạng, cập nhật 2026-10-04:** [`src/routes/index.tsx`](../src/routes/index.tsx) triển khai landing theo §2.1. Chưa có giao diện protocol hoặc kết nối ví. Các màn hình app, route, modal và thao tác tiền bên dưới vẫn **proposed**, không phải tính năng đang chạy. Chưa có giao dịch tiền thật end-to-end hoặc company-off drill đạt yêu cầu.
+> **Hiện trạng,2026-10-04:** Home imports landing-only [`ProtocolConcept`](../src/components/ProtocolConcept.tsx): complete SVG/CSS2.5D still/four captions, one automatic4800ms native emphasis on eligible viewport entry, **no playback buttons**. Public page uses short concrete copy, Source/Destination and Trader/Solver labels; separate official Solana/NEAR/Hyperliquid context identifies roles, not live routes. A1–A3 retained/resolved history và latest A4 overlap proof ở [audit](design-audit.md). Không executable protocol UI, full financial/accessibility/performance/trademark/deployment qualification.
 
 ## 1. Phạm vi, nguồn và quyết định
 
@@ -18,32 +18,108 @@ Mục tiêu: người dùng hiểu mình đang giao dịch ở đâu, exact asse
 
 **Thứ tự đọc:** PRODUCT owns scope; ARCHITECTURE owns behavior; SERVER-INDEPENDENCE owns recovery; status owns observed readiness. Các ghi chú SDK/dated imports về thin SDK, SQLite hay source migration không override architecture/status mới. Không suy ra endpoint, SQL engine hoặc state implementation từ mô tả conceptual. Không import giả định auto-residual routing, thời gian 60 giây, 5 bps hay zero fee từ tài liệu lịch sử.
 
-- [concept.md](concept.md): định vị sản phẩm và ý nghĩa Renaissance Exchange.
-- [style.md](style.md): tokens, typography, component states và contrast.
-- [artwork.md](artwork.md): tên tác phẩm, tác giả/attribution, niên đại, nguồn, quyền sử dụng và crop. Tài liệu này chỉ quyết định vị trí ảnh, không thay provenance.
+- [concept.md](concept.md): định vị sản phẩm, vocabulary và giới hạn lời hứa.
+- **Tài liệu này:** canonical current landing composition, Home/root/illustration-leaf responsibilities, implemented storyboard/behavior; §§3 và 6 tiếp tục owns financial UI mapping, không tạo financial state machine thứ hai trong animation.
+- [style.md](style.md): canonical actual landing colors/fonts/geometry/focus/motion và scoped accessibility/performance targets; workspace recipes và unmeasured targets riêng.
+- [artwork.md](artwork.md): canonical exact image/font/mark sources, attribution, rights, role/status và functional-logo eligibility. Tài liệu này quyết định vị trí, không thay provenance.
+- [design-audit.md](design-audit.md): canonical observed audit, retained A1–A3 reproduction history/resolved proof scope, reference ledger và true unknowns; không legal/financial/deployment qualification.
 
-**Các lựa chọn cố định:** landing sáng editorial; workspace Navy, dense và text-first; mặc định nav vào P2P, không vào external spot. No globally exposed private orderbook, universal cross-chain balance, privacy score/badge hoặc chart/TVL/activity/balance giả. Không thêm tabs perps, LP, farming hay agents. Chưa enable native Ironwood ZEC → local EVM native asset; không trình bày ZEC/USDC như cặp live. Samechain bilateral là proposal; strict-private matching structural Blocked, không được “chữa” bằng nhãn MPC/ZK.
+**Các lựa chọn cố định:** landing contemporary neutral light/dark với historical paintings, selective display và sans controls; workspace Navy, dense và text-first; mặc định app nav vào P2P, không vào external spot. No globally exposed private orderbook, universal cross-chain balance, privacy score/badge hoặc chart/TVL/activity/balance giả. Không thêm tabs perps, LP, farming hay agents. Chưa enable native Ironwood ZEC → local EVM native asset; không trình bày ZEC/USDC như cặp live. Samechain bilateral là proposal; strict-private matching structural Blocked, không được “chữa” bằng nhãn MPC/ZK.
 
 ## 2. Landing và app là hai bề mặt khác nhau
 
 ### 2.1 Landing `/` — giải thích trước, không giả một sàn live
 
-**Landing build được người dùng duyệt 2026-10-04.** Public copy English; nền Paper/Ink ngoài hero, dark mode Navy/Paper. Landing là full marketing surface trước ứng dụng, không giả đã có app/trading. User chọn background painting có text overlay, superseding first proposal text/art-separated. Reference study: Colosseum editorial/ornament, Uniswap action clarity, Hyperliquid spacious hierarchy; không copy tài sản, metrics hoặc claims.
+**Redesign được người dùng duyệt 2026-10-04, thay thế layout/copy cũ.** Public copy English; audience là early Zcash users/builders đánh giá dự án. Contemporary exchange, không historical-institution website: neutral surfaces, thin rules, borderless compositions, measured spacing, sans body/controls và expressive display có chọn lọc. Painting vẫn làm hero backdrop, không tách thành stock-image token; localized legibility treatment không flatten toàn tranh. Reference Hyperliquid là bài học hierarchy/composition, không copy fonts proprietary, assets, metrics hoặc claims.
 
-1. Header logo Z2Z coin alpha, Markets/Philosophy/How it works anchors, theme toggle và Explore Z2Z; mobile accessible menu.
-2. Hero near-fullscreen `/art/landing/hero-{800,1660}.webp`: Bellotto ecosystem painting full-bleed, localized navy scrim; serif “A new renaissance for open markets.” với ivory copy/gold CTA. Primary Explore Z2Z dẫn `#markets`, secondary How it works dẫn actual section; small Development status, không giả Launch app/wallet form.
-3. Editorial philosophy “Built for people. Not gatekeepers.”; ba asymmetric image-content cards: Markets, between people. / Privacy, on your terms. / Your rights. Your tools. P2P, Ideal City và Turner ảnh dominant, text trên solid surfaces. No artwork behind financial controls.
-4. How it works ba bước Choose terms → Review & authorize → Verify settlement; gọi rõ designed flow, không cho là money path đã available.
-5. Readiness/P2P/RFQ/external spot context: native/local route incomplete, matching blockers, no finished real-money exchange; ecosystem motifs là research/tooling context, không supported-network logo wall. No fake statistics/countdown/TVL.
-6. FAQ native details/summary, final CTA, footer official Zcash/Colosseum references và meaningful artwork credit links. Không copy Colosseum logo/partnership claims. Không fake email signup/waitlist/backend.
-7. Responsive320px+, theme preference/cookie-free localStorage only, SSR-safe bootstrap, keyboard focus/touch44px/reduced motion. Hero eager, card images lazy, local responsive WebP derivatives; không Google fonts hoặc third-party trackers.
-8. App navigation vẫn proposed ở§2.2; landing CTA chỉ actual anchor/reference trước khi app được implement.
+**Bốn nhịp, không thêm các section rhetorical lặp lại:**
 
-**Runtime evidence 2026-10-04:** client/SSR `pnpm build` và `pnpm exec tsc --noEmit` đạt. Chromium smoke xác nhận desktop1440 và widths320/390/768 không horizontal overflow; text200% tại320/390 với menu mở/đóng reflow sau sửa min-content/header. Theme lưu/reload, system-dark initial, storage-denied toggle; menu Escape/outside click/anchor-close và section focus; native FAQ click/Enter; no-JS hero/FAQ; reduced-motion scroll auto; image load/local anchors; production metadata và không devtools đã exercise. Desktop1440 hero-composite sampled minimum ratios: eyebrow9.22, heading4.62, supporting copy7.11. Đây là bounded smoke, không full accessibility audit và không chứng nhận các financial scenarios §10.
+1. **Hero/product/action.** Approved Z2Z coin/header, Bellotto ecosystem hero, unchanged H1 **“A peer-to-peer exchange, built around Zcash.”** Supporting **“A DEX in development for trading directly with other people. Agree on the asset, amount and price before authorizing a trade.”** Status **“In development. Trading is not available.”** **View source** → verified [public web repository](https://github.com/build-onchain/z2z-protocol), not complete financial protocol; **The idea** → `#exchange`.
+2. **Product thesis / `#exchange`.** H2 **“Agree on the trade. Know what you authorize.”** Trader/solver agree exact terms, solver commits destination funds first, trader checks before source authorization. Figure **“How a trade would work” / “In development · Not live”**, **“One illustrative full-payment branch”**; Source/Shielded Zcash, Destination/Local EVM, separate Trader/Solver, exact-terms plaque, local funds and dashed evidence. Four captions/conditional recovery/privacy limits always readable; automatic-once emphasis changes no financial state. Separate role-labelled ecosystem context below scope, then one Ideal City panorama. No extra marketing beat, artwork-card series, wallet/form/price/operation. Former Offer↔Agreement↔Settlement A/B participants are historical, not chains.
+3. **Ba essential questions / `#questions`.** Native details/summary: **Can I trade today?** Not yet; development, không wallet/order/funds path. **What is private?** Intended shielded Zcash source; destination amounts/addresses/timing có thể public; private matching unresolved, không universal anonymity. **Where can I follow development?** Link public web source/GitHub; không giả toàn financial code đã published. Không thêm affiliation FAQ, internal readiness inventory hoặc procedural trading steps.
+4. **Own-brand ending/footer.** Oversized typographic **Z2Z** trên dark solid ending, riêng với canonical approved coin symbol; không regenerate logo hoặc centered duplicate CTA. Functional Exchange / Questions / GitHub links. Discreet native artwork-credits drawer có actual Cleveland/Walters original collection sources, accurate attribution/period/CC0 và AI-edit disclosure; ecosystem emblems là editorial motifs, không integrations/endorsement. Không Inspiration column, Zcash/Colosseum design-reference links, placeholder socials/legal, fake signup/waitlist, partner wall hoặc metrics.
 
-Asset local được chọn theo artwork register: `/art/ideal-city.jpg`, `/art/bellotto-piazza-san-marco.jpg`, `/art/canaletto-piazza-san-marco.jpg`, `/art/turner-venice.jpg`, `/art/monet-garden-antibes.jpg`, `/art/hoffbauer-world-fair-1900.jpg`. Không tải ảnh third-party lúc xem trang. “Renaissance-inspired” mô tả hệ thẩm mỹ; tranh thế kỷ XVIII/XIX hoặc sự kiện 1900 phải ghi đúng thời kỳ, không gọi tất cả là tranh Renaissance. Các tác phẩm lịch sử open-access không biểu thị Zcash endorsement.
+**Delivery/accessibility contract, không blanket PASS:** responsive320px+,200% text/text-spacing, visible keyboard focus,44px touch targets, complete reduced-motion/no-JS meaning. Short plain public copy applies throughout hero/thesis/diagram/questions; precise financial terms remain in specification. Root/Home ownership retained; hero eager/panorama lazy, local approved coin/art/fonts/OFLs unchanged. Official identity SVGs below source/scope don't create routes or legal clearance; permission/terms review before public deployment. A1–A3 prior bounded resolution and A4 latest overlap checks are in audit, not all-state/full-AT certification. No new runtime dependency/font CDN/tracker/financial action.
 
-**Artwork update 2026-10-03:** bộ first `*-painting-edit.png` được giữ; bộ latest `public/art/generated/*-z2z-ecosystem.png` dùng chính approved circular Z2Z symbol làm third input cùng original source painting và official emblem reference sheet. Editorial mapping: Bellotto open-markets hero; Canaletto P2P/Raydium/USDC; Ideal City privacy/proof-tooling; Turner Recovery với provider motifs ngoại vi. Own symbol **không wordmark**, có [light alpha](../public/brand/z2z-logo-light-transparent.png)/[dark alpha](../public/brand/z2z-logo-dark-transparent.png), không dùng background previews khi mount. Full sources/status/paths ở [artwork catalog](artwork.md#logo-z2z-và-bộ-ecosystem-sau-duyệt--2026-10-03). Third-party marks là narrative current-tooling/candidate/deferred, không canonical wallet logos/support/endorsement indicator. Không financial UI backdrop; actual dimensions theo manifest, caption rõ AI adaptation. Chưa mount vào app.
+**Prior bounded redesign verification — integration owner, 2026-10-04, không chạy lại trong đợt docs/audit:** final `NITRO_PRESET=vercel pnpm build` + `pnpm exec tsc --noEmit` **PASS** (10.30s), sau khi dừng concurrent dev. Initial build timed out; retry sau khi dừng dev pass không cần source fix. Runtime contention là inference, không root cause đã được độc lập chứng minh. Generated Vercel-preset SSR output được exercise qua local preview4173 và actual Node24 function trả HTTP200; đây không deployment.
+
+- Isolated Chromium actual widths320/390/768/1440: không page overflow;320/390 với root font200% và menu mở/đóng pass reflow.
+- Mobile menu Escape/outside/anchor closure và focus tới Exchange pass; FAQ click/Enter và native credits pass. Three-state system/light/dark cycle, persistence/reload, system preference changes và storage-denied pass.
+- No-JavaScript hero/FAQ/credits keyboard và settled pointer interactions pass. Initial raw selector click misses do font/layout transient; corrected settled hit pass, không suppress hoặc source workaround.
+- Reduced-motion scroll `auto`; local images và actual Instrument Serif/Manrope TTFs loaded. `brokenAnchors:0`, `remoteResources:[]`, `pageerrors:[]`; public View source repository HTTP200 verified.
+- **Historical pre-fix sampling:** actual hero image/CSS composite390/1440 both themes had H1 minima9.83/3.61, support14.16/7.90, status15.75/5.77. Later historical768×1000 support2.21/status2.83 established A1; H1 bbox1.44 did not establish a glyph failure. These bounded old crop methods cannot certify current text, all responsive crops or full AA.
+- **Historical initial full-page audit, superseded by authorized fixes:** previously built output on4182 had default reflow passes at320/390/768/1440/1920, boundaries639/640/641,831/832/833,1119/1120/1121 and landscape844×390; it also reproduced A1, A2 hidden-open390→1440→390 and A3 spacing424px overflow. [Audit](design-audit.md) retains these failures and current resolution proof; earlier reviewer “no findings” never erased them.
+
+**Prior manual-illustration implementation checks — owner,2026-10-04:** build/TypeScript passed (7.39s); Node24 generated Vercel handlerHTTP200 and local Zcash markHTTP200; preview4183 supplied A1 text-line contrast, A2 menu resize/focus and A3 spacing resolution. Former12-track9000ms Play/Pause/Resume/Replay/offscreen/resize/reduced-motion checks and simulated hidden-page handling remain historical, **not current automatic behavior**. No-JS/native FAQ/credits, dark reload/local images/fonts/anchors/no errors were bounded prior observations. [Audit](design-audit.md) preserves exact proof.
+
+**Latest automatic/plain-copy/ecosystem cutover — owner,2026-10-04:** build/TypeScript PASS7.79s(artifact272);Node24 actual generated SSRHTTP200/plain caption/no playback UI;5newSVGURLsHTTP200. Preview4184:no overflow at320/390/640/768/832/833/900/1024/1119/1120/1121/1280/1440/1920 and320/390200%;declared spacing320/390100%/200% document305/375 within viewports. Fresh offscreen idle→eligible entry12tracks4800ms→natural ended0→re-entry quiet;active offscreen/reduce also ended0. No-JS4steps/3ecosystem anchors/no controls. Targeted visible nonabsolute children no collisions;plaque/plinth gap12px100%,24px200%. Latest menu390open→1440closed/visibleExchangefocus→390closed/Escape/FAQ keyboard pass,darkreload/3correctvisiblemarkvariants/no brokenhashes/pageerrors. New shortened-copy Range-line current-composite390/640/768/1120/1121/1440 support/status≥4.5;[audit](design-audit.md#a1) owns exact pairs/prior distinction. Not every pixel/AT/real background-tab/native-error-support matrix/CWV/legal/fundedroute/deployment proof.
+
+**Additional latest lifecycle observations:** active resize1440→1280 canceled to ended0animations;fresh playing→simulated hidden `document.visibilityState`+`visibilitychange` canceled to ended0;restored visible property/event did not restart. Current handler/latch paths exercised,not actual background-tab/OS scheduling. Error/unsupported-native API matrix remains unmeasured.
+
+**Historical/superseded evidence — previous landing, 2026-10-04:** `pnpm build` và `pnpm exec tsc --noEmit` đạt; bounded Chromium smoke đã exercise widths320/390/768/1440,200% reflow, theme persistence/system/storage-denied, menu/FAQ keyboard, no-JS và reduced motion. Các checks và sampled hero ratios của surface cũ **không** chứng nhận redesigned layout/copy/crops/typography; không full accessibility audit hoặc financial qualification.
+
+**Artwork retention:** sáu source JPEG, first `*-painting-edit.png`, approved ecosystem PNGs và derivatives/provenance đều được giữ. Landing mới chỉ render Bellotto hero và Ideal City panorama, không Canaletto P2P/Turner recovery cards hoặc Monet/Hoffbauer. Approved own symbol **không wordmark**, có [light alpha](../public/brand/z2z-logo-light-transparent.png)/[dark alpha](../public/brand/z2z-logo-dark-transparent.png), không background previews. Large footer Z2Z là page typography, không đổi canonical symbol. [Artwork catalog](artwork.md#logo-z2z-và-bộ-ecosystem-sau-duyệt--2026-10-03) giữ source/motif history; AI-edited adaptations không nguyên bản bảo tàng, canonical wallet logos, support badges hoặc financial-control backdrop. Bellotto/Canaletto thế kỷ XVIII và Turner thế kỷ XIX không thành Renaissance; không museum/Zcash endorsement.
+
+<a id="landing-components"></a>
+
+#### 2.1.1 Current composition và ownership
+
+`Route` uses `component: Home`. Root theme bootstrap và Home sections/handlers remain existing owners; Home imports **one landing-only default-export leaf** `ProtocolConcept`, no props/public SDK API, financial loader, generic scene configuration hoặc chain registry. Đây là responsibilities của current source, không lệnh refactor.
+
+| Phần current / source | Trách nhiệm và contract |
+| --- | --- |
+| Theme bootstrap — `__root.tsx:17–31,76–79` | Guarded `z2z-theme`, classes/data-theme before content; system observer only applies in system mode. CSS no-JS system-color/logo fallback, unusable theme action hidden without bootstrap. |
+| Theme action — `index.tsx:81–105` | Native system→light→dark→system action, current visit still changes if storage blocked; CSS accessible current/next names. Illustration inherits scoped CSS, no second theme owner. |
+| Header/menu — `index.tsx:8–58,64–119` | Native nonmodal details/summary; Home owns Escape/outside/anchor close/focus. `matchMedia('(max-width: 52rem)')` change clears open on desktop; if focus was inside disappearing disclosure, moves to visible desktop Exchange link, otherwise no focus theft. Escape/outside handlers only operate in mobile mode; no trap. A2 proof is bounded in audit. |
+| Hero — `index.tsx:123–157`; `.hero::before`/responsive CSS | One H1/eager dimensioned decorative painting,short concrete support/status.40–70rem gradient/56vw keeps A1 fix;art/headline unanimated. Owner repeated new-copy text-line composite at390/640/768/1120/1121/1440≥4.5;prior numbers retained separately,no H1/every-glyph certificate. |
+| Thesis/panorama — `index.tsx:159–183` | Exact-terms thesis, `<ProtocolConcept />`, existing lazy dimensioned descriptive Ideal City panorama. No financial forms/RPC/live state. |
+| Illustration leaf — `ProtocolConcept.tsx:3–129,131–328` | Complete SSR source/terms/destination/four-caption/scope plus isolated ecosystem group; decorative SVG aria-hidden. Local `idle/playing/ended`, native automatic-once4800ms emphasis/cleanup, no controls/SDK/financial API. |
+| Questions — `index.tsx:185–208` | Three native disclosures with trading/privacy/public-web-source limits; no custom accordion API. |
+| Footer/credits — `index.tsx:211–238`; `.footer-wordmark` CSS | Dark page-wordmark/accessibility equivalent, three minmax grid tracks/40cqw display, actual links/native museum/font credits. Prior A3 bounded spacing proof retained, no clipping/user-override suppression/Inspiration. |
+
+Stable destinations: `#top`, `#main`, `#exchange`, `#questions`, `#artwork` và `https://github.com/build-onchain/z2z-protocol`. Không wallet/RPC/live network dependency để đọc landing. Exact implemented visual recipes thuộc [style](style.md#landing-tokens); observed interaction evidence thuộc [audit](design-audit.md).
+
+<a id="agreement-landscape"></a>
+
+#### 2.1.2 Implemented “Agreement landscape” — approved composition
+
+Authorized and implemented2026-10-04 as a **SVG/CSS2.5D architectural maquette** on inherited solid neutral landing surface. Source plane left, exact **Asset / Amount / Price** plaque/plinth center, destination plane right; depth only in architectural geometry/shadows, HTML labels upright outside projection. Own approved coin stays flat on the terms plaque—not middlechain/custodial router. No glossy coins, portal/neon/parallax paintings or borrowed LayerZero asset. Existing fonts/paintings/four beats retained.
+
+- Source **“Source / Shielded Zcash”**, **“Trader checks the funded destination”**, **“Source payment only after that check”**; separate **Trader / Solver**. **“Funds · shielded payment to the solver”** is source-local, not a cross-chain cash arrow. Trader maps canonical Owner U; Solver maps Solver S, without changing financial docs.
+- Destination **“Destination / Local EVM”**, **“Native asset · already funded, not minted”**, **“Solver funds and commits first”**; Solver/Trader actors with **“Funds committed to the trade”** on its own row, **“Funds · existing asset paid to the trader”**. Neutral EVM glyph does not identify Ethereum/Base/USDC/live network.
+- Caption **“How a trade would work” / “In development · Not live”**, descriptor **“One illustrative full-payment branch”**; plaque **“Prepare recovery data. Recovery is conditional.”**, gate **“Agreed by trader + solver”**. Scope explicitly recovery conditional/not yet available and other outcomes pending. Evidence rail **“Finalized source evidence / Evidence, not funds / Verify source evidence”**, complete/valid/finalized source qualification remains explicit.
+- Unchanged official Zcash SVG,28px in44px `https://z.cash/` link named **“About Zcash at z.cash”**, flat authentic mark. Own approved coin stays terms identity, not a middlechain. [Artwork](artwork.md#functional-protocol-marks) owns provenance/policies; identification is not endorsement, route readiness or legal clearance.
+- Below captions/scope: **“Ecosystem context · Not live settlement routes”**. **Network research:** [Solana](https://solana.com/) — **Native adapter candidate**; [NEAR](https://near.org/) — **Research context**. **External venue:** [Hyperliquid](https://hyperliquid.xyz/) — **External venue · testnet reads**. Separate meaningful official links, unmodified first-party files/theme variants, no payment/evidence-plane placement/partner lockup/live-support implication. Explicit group note denies payout destinations/partnerships/endorsements. Other staging/asset/tool/deferred directions remain docs-only.
+- Desktop scene shares four **subgrid rows** for domain headings/models/actors/funds; terms occupies center, evidence own row. Positive `.75rem` plaque/plinth gap replaces negative overlap; prefund label owns actor row, icons remain contained. **≤70rem** stacks scene (domain≤28rem,terms≤24rem,gap2.5rem); nav still **≤52rem**. Ecosystem columns collapse≤70rem; network entries one column≤40rem. This is readable reflow, not projected/shrunken labels.
+
+**Historical alternatives considered before approval:** pre-rendered3D still adds media/variant maintenance; WebGL would need a genuine user-controlled spatial requirement unmet by SVG/still. Selected fixed two-domain explanation required neither. Actual implementation uses native SVG/CSS/WAAPI, **no WebGL/Lottie/video/motion library/new runtime dependency**. This complexity choice is not measured performance superiority. [Reference ledger](design-audit.md#reference-ledger) preserves the research/proposal trail.
+
+<a id="illustration-storyboard"></a>
+
+#### 2.1.3 Implemented storyboard — một full-payment branch, không financial state machine mới
+
+Đây là bốn caption steps luôn tồn tại trong SSR HTML; animation chỉ emphasis. §§3 và 6 cùng canonical ARCHITECTURE vẫn owns actual money rules/allocation/unknown/refund/excess/retry. Illustration không thay protocol qualification hoặc mô tả mọi branch.
+
+| Step | Meaning luôn nhìn thấy trong still | Implemented explanatory emphasis |
+| --- | --- | --- |
+| **1 — Agree on the terms** | Trader/solver fix asset,amount,price; trader keeps data/tools for conditional recovery. Exact executable source authorization remains withheld until funded-commitment check. | Plaque/first-caption emphasis, no safe-money tick. |
+| **2 — Fund the destination first** | Solver funds native asset and **irrevocably commits** to agreed trade **before trader can authorize source payment**. | Destination-local prefund trace/second caption; no source→destination cash transport. |
+| **3 — Check, then pay** | Trader independently checks committed funds,code,verifier,recipients,finality, then authorizes shielded Zcash payment. Canonical full checks remain financial specification. | Source-local trace/third caption; no mint/cross-chain atomic promise. |
+| **4 — Verify, then settle** | Complete,valid,finalized source evidence must be accepted/classified before existing destination asset pays trader in this full-payment branch. Other branches retain exact canonical rules. | Dashed evidence before destination allocation trace; final-caption emphasis spans both. Evidence/receipt/credit is not cash/paid. |
+
+Exact scope: **“This illustrates the full-payment path, not every outcome. Other outcomes can stay pending. Recovery is conditional and is not yet available.”** Privacy: **“The design uses shielded Zcash at the source. Destination addresses, amounts and timing can still be public. Private matching is not yet solved.”** Partial/excess/conflict/evidence-pending rules remain canonical §§3/6/specification; no false happy-path loop. Public copy removes P/U/S notation, not financial gates or complete-source-evidence qualifications.
+
+<a id="illustration-interface"></a>
+
+#### 2.1.4 Implemented illustration behavior contract
+
+- **Authorization/history:** latest request supersedes former user-started9s controls with automatic short emphasis, plain whole-page copy, visible role-qualified ecosystem marks and overlap repair. Initial proposal/manual implementation/A1–A3 proof remain historical. Financial gates/contracts/routes unchanged.
+- **One landing leaf:** default export used only by Home/no props, static labels/local assets/existing theme, no wallet/RPC/API/live financial state/SDK/registry. `idle / playing / ended` is local art state.
+- **Complete first:** semantic SSR figure/four ordered captions/scope/ecosystem always readable; decorative SVG/emphasis aria-hidden. **No Play/Pause/Resume/Replay controls or timing toolbar exist**, including SSR/no-JS. Reduced-motion/unsupported native APIs/animation error retain complete still.
+- **Automatic once:** WAAPI and IntersectionObserver supported, reduced-motion off, document visible, scene intersecting, **at least25% of source-model height visible** and horizontally in viewport. First eligible entry starts12 native tracks for **4800ms**, `hasStarted` latches successful run for this mounted leaf. No loop/re-entry/replay/resume; an initially ineligible still can begin when first eligible, but a started run cannot restart. Terms0–960ms; prefund960–2025.6; source2025.6–3091.2; evidence3091.2–3945.6; allocation3945.6–4800; final caption3091.2–4800. Art timing is not settlement/recovery ETA. No timer/requestAnimationFrame/render loop/per-frame aria-live/focus or pointer capture.
+- **Lifecycle:** active run offscreen/hidden/resize/reduce → cancel all animations and `ended` complete still; natural finish does the same. Return visibility/re-entry/preference restoration does not restart a latched run. Unmount disconnects observer/listeners and cancels. Initialization/native animation errors disable enhancement and preserve still. Exact code contract is source evidence; latest exercised paths versus unknowns belong to audit, not assumed old manual-lifecycle results.
+- **Evidence/rights ownership:** [style](style.md#illustration-motion) actual recipes/unmeasured targets, [artwork](artwork.md#functional-protocol-marks) exact assets/conflicting restrictive policies and human permission review before deployment, [audit](design-audit.md) latest bounded layout/autostart/logo proof/A1–A4 history. Local-preview user authorization is not third-party trademark clearance, funded protocol qualification/full accessibility/CWV or deployment.
+
 
 ### 2.2 App — công cụ kiểm tra, không một gallery
 
@@ -260,43 +336,60 @@ PayoutReady/RefundReady -- verified failed attempt --> giữ nguyên ready right
 ## 7. Wireframes, responsive sizes và scroll priority
 
 Wireframes biểu diễn **layout/labels**, không fake live data. `<exact asset>`, `<raw amount>`, `<state>` là tên vị trí trong spec, không placeholder rows để publish. Mọi proposed screen khi chưa có authentic data dùng states §5; không seed mock balances/price history vào UI. Typography, contrast và visual component details theo style.md.
+Landing figure và proposed storyboard §2.1 khác wireframes workspace dưới đây: chúng là explanatory content, không financial inputs/states/capability UI. Bản current giữ Offer/Agreement/Settlement; native 2.5D replacement chưa được duyệt.
+
 
 ### 7.1 Landing desktop / mobile
 
 ```text
-DESKTOP — full-bleed painted hero; editorial content max1280
+DESKTOP — painting-led hero; neutral contemporary content
 +------------------------------------------------------------------------------------+
-| Z2Z coin   Markets   Philosophy   How it works       Theme        Explore Z2Z        |
-|                                                                                    |
-| Private by intent. Open by design.      Original Bellotto ecosystem painting         |
-| A new renaissance                      remains visible beyond text safe area         |
-| for open markets.                                                                  |
-| Short honest concept copy              Local navy scrim behind ivory text            |
-| [Explore Z2Z] [How it works]            No financial form / no fake live metrics      |
-| Development status                                      Scroll invitation           |
+| Z2Z coin    Exchange    Questions                  Theme           View source       |
+| A peer-to-peer exchange,                Approved Bellotto painting remains visible   |
+| built around Zcash.                     beyond a localized text-safe treatment       |
+| A DEX in development. Agree on asset, amount and price before authorizing a trade.    |
+| [View source] [The idea]                 In development. Trading is not available.   |
 +------------------------------------------------------------------------------------+
-| Philosophy: Built for people. Not gatekeepers.                                      |
+| Agree on the trade. Know what you authorize. | Source / Exact terms / Destination   |
+| Exact asset / amount / price first          | How a trade would work · Not live    |
+| Shielded source intention; destination may be public; matching unresolved           |
+| Solana: native adapter candidate / NEAR: research / Hyperliquid: testnet reads       |
 +------------------------------------------------------------------------------------+
-| Large P2P image + content       | Privacy image + content                            |
-| Markets, between people.        | Privacy, on your terms.                            |
-+--------------------------------+---------------------------------------------------+
-| Recovery artwork + solid panel: Your rights. Your tools.                            |
+| Questions: Can I trade today? / What is private? / Where to follow development?     |
 +------------------------------------------------------------------------------------+
-| Choose terms -> Review & authorize -> Verify settlement (designed flow)             |
-| Readiness + mechanism boundary -> FAQ -> Final CTA -> Attribution/footer            |
+|                              Z2Z  (own oversized typography, dark solid ending)    |
+| Exchange    Questions    GitHub                                      Art credits v |
 +------------------------------------------------------------------------------------+
 
-MOBILE — background hero retained, stronger safe-area scrim
+MOBILE — same four beats, painting backdrop retained
 +--------------------------------------+
-| Z2Z coin             Theme [Menu]    |
-| Hero title/copy/CTA over painting    |
-| Artwork beyond readable text area   |
-| Development + scroll cue            |
-| Philosophy -> artwork cards stacked |
-| Steps -> Readiness -> FAQ           |
-| Final CTA -> Attribution/footer     |
+| Z2Z coin             Theme [Menu]     |
+| Product headline over painting       |
+| Source / The idea / visible prelaunch |
+| Exact-terms thesis + source/destination |
+| Privacy caveat + Ideal City panorama |
+| Three questions (native disclosures) |
+| Large own Z2Z / links / credits       |
 +--------------------------------------+
 ```
+
+**Current implemented figure within the same product beat:**
+
+```text
+How a trade would work                              In development · Not live
+One illustrative full-payment branch
+Source: Shielded Zcash    Exact terms: Asset / Amount / Price    Destination: Local EVM
+Trader / Solver          Conditional recovery data             Solver / Trader
+source-local Funds       Agreed by trader + solver              committed native Funds
+                    Evidence, not funds → verify before destination payout
+1 Agree on terms → 2 Fund destination first → 3 Check, then pay → 4 Verify, then settle
+Full-payment path only; other outcomes pending; recovery conditional/not available
+Ecosystem context · Not live settlement routes
+Network research: Solana candidate / NEAR research   External venue: Hyperliquid testnet
+```
+
+Mobile recompose theo stable source/terms/destination + caption order, logo groups có role/status và không public support wall. Composition details §2.1.2–2.1.4; exact current breakpoints/gutters thuộc style §5, không workspace768/1280 grid dưới đây.
+
 
 ### 7.2 Trading desktop — P2P
 
@@ -451,13 +544,16 @@ Các local view tabs không hide important pending banner hoặc lost authorizat
 | `1280–1535` | Gutter 24px, gap 16px; list khoảng 280px, center flexible `min-width: 0` đủ khoảng 400px, consent khoảng 320px. Header khoảng 64px; dense table rows tối thiểu 44px, form/control heights 44px, body/money ≥14px. |
 | `≥1536` | Gutter 32px/gap 20px; list khoảng 320px, consent khoảng 360px, center flexible; workspace max khoảng 1800px. Extra width tăng visibility, không thêm speculative panels. |
 
-Landing dùng normal page scroll; responsive image giữ focal architecture, caption in-flow và no autoplay. App desktop có header + persistent status và **tối đa hai scroll regions**: order/activity list và task area; consent cùng task reading/scroll context. Sticky panel/action summary không che long exact descriptors hoặc errors. Với height `<720px`, compact layout/zoom, ưu tiên page scroll thay nested clipped panes. Review chỉ một content scroll + action footer. Table horizontal scroll chỉ **bên trong labeled region** khi bắt buộc cho comparison, sticky first identifier column và visible affordance; không rút số tiền thành icon.
+Landing uses normal page scroll, static responsive paintings/in-flow captions; only the Agreement landscape has automatic-once4800ms emphasis under its eligibility/reduced-motion contract, no animated gallery. App desktop header + persistent status và tối đa hai scroll regions: order/activity list và task; consent cùng task reading context. Sticky summary không che descriptors/errors; height<720px/zoom ưu tiên page scroll. Review một content scroll + action footer. Table horizontal scroll chỉ trong labeled comparison region, không rút money thành icons.
 
 **Scroll/read priority:** critical pending/reorg/blocker → action/venue/exact assets → amounts/recipients/fees → terms/remainder → capability/recovery → evidence/detail/list. Critical financial facts không chỉ ở hover tooltip; auxiliary evidence có disclosure nhưng blockers luôn visible. Focus/validation đưa user đến field lỗi mà không cuộn mất summary; keyboard tab qua controls không kẹt ở panel.
 
 ## 8. Keyboard, accessibility, localization và precision
 
 ### 8.1 Interaction/accessibility contract
+
+**Scope:** current root/Home theme/menu/FAQ/footer + landing-only illustration leaf theo[§2.1.1](#landing-components),implemented playback[§2.1.4](#illustration-interface)/[style](style.md#illustration-motion). No modal trap/financial live-region updates for nonmodal disclosures or art. A1–A3 resolved within audit proof scope, never exceptions to ongoing accessibility targets; all-state/AT matrix remains unqualified.
+
 
 - Semantic landmarks/headings, real links cho navigation, buttons cho actions; skip links đến task và list. List/table có caption/scope, headers và sort state; row selection không chỉ on-click area không focusable. View tabs có selected state và keyboard semantics; disclosures ghi rõ nội dung.
 - Full keyboard flow: navigation → exact selectors → fields → checklist/detail → review → explicit signer action. Native browser focus order theo DOM/read priority; không global single-key shortcut gửi tiền, không Enter ở amount auto-sign, không double-submit từ repeat key. `Tab`/`Shift+Tab`, arrow navigation trong actual tab/selector widgets và `Space`/`Enter` chỉ kích hoạt focused safe control.
@@ -497,6 +593,8 @@ Nguồn: SERVER-INDEPENDENCE §3; ARCHITECTURE §§4, 8; SDK §§3, 5–6. Khôn
 ## 10. Acceptance scenarios — required, chưa được exercise
 
 Đây là tiêu chí cho future implementation/release review, **không test results**. UI giải thích đúng không thay actual protocol qualification/drill. Protocol facts do canonical sources/real validator cấp; consumer phải phản ánh chúng. Diagram/modal/state prototype không chứng minh route đủ điều kiện. Công việc docs này không chạy build, lint, tests, formatter, install hoặc financial actions.
+Current landing/A1–A3 retained bounded proof và A4 overlap resolution belong to [audit](design-audit.md); this financial acceptance table is not executed trading evidence. Illustration preserves prefund-before-source-authorization, complete evidence≠funds/no burn-mint, authentic role-qualified context and complete still/no-JS/reduced/mobile meaning with4800ms automatic-once/no-control cleanup. Bounded art/layout proof does not close financial gates, certify global accessibility/CWV/trademark rights or deploy.
+
 
 ### 10.1 Product, exact context và consent
 
@@ -534,10 +632,10 @@ Nguồn: SERVER-INDEPENDENCE §3; ARCHITECTURE §§4, 8; SDK §§3, 5–6. Khôn
 | D20 — actual completion evidence | Completed chỉ đúng actual U/S allocations + accepted supported source relation/finality; Refunded chỉ actual S destination refund + real conflict/nonpayment/source branch evidence. Partial labeled partial với both shares; tx hash/ACK/credit/log/proof/message không paid. `AllocationReady` chỉ SDK conceptual step, no implemented alias/state transition. | ARCHITECTURE §§1.1, 7.2; SDK §§2, 7. |
 | D21 — locale/precision/keyboard/320px/zoom | Canonical decimal input rejects ambiguous/excess precision, no float/silent rounding; full exact units/recipients/fees accessible trước ký. Locale không đổi signed terms. Tab/focus/Escape không vô tình ký/cancel onchain; 200% zoom/small viewport không clipped financial summary/actions. | Interface §§7–8; exact-unit/authorization requirements PRODUCT §6, SDK §§1, 7. |
 | D22 — private logging/storage/support export | No secrets/private P/Q/PCZT/witness/quote↔source mapping trong WebStorage/plaintext cache/hydration/URL/errors/analytics; explicit encrypted owner kit, disjoint scopes; diagnostic redaction inspected, no auto upload/replay/hashed private locator. No secret request để support. | SERVER-INDEPENDENCE §3; ARCHITECTURE §§4, 8; SDK §§3, 5–7. |
-| D23 — art/copy/claims | Local art đúng period/attribution; no art behind financial controls/numbers, no endorsement/audit/privacy badge. Landing mở vào proposed P2P design, external tách explicit; no fabricated TVL/activity/charts/balances/fee/ETA. | Interface §§1–2, 7; concept/style/artwork; PRODUCT §§5–7; status. |
+| D23 — art/copy/claims | Local art đúng period/attribution; no art behind financial controls/numbers, no endorsement/audit/privacy badge. Landing primary CTA dẫn verified public web source, không implied published sibling protocol; app P2P vẫn proposed, external tách explicit. No fabricated TVL/activity/charts/balances/fee/ETA. | Interface §§1–2, 7; concept/style/artwork; PRODUCT §§5–7; status. |
 
 ## 11. Handoff và giới hạn
 
-`docs/design.md` cùng concept/style/artwork là bộ spec giao diện; landing §2.1 hiện đã được triển khai trong web source. Financial implementation và APIs không được chọn bởi tài liệu này; canonical validators/consumer operations phải thực có và qualified trước đưa money controls live. Phần đã available và blocked phải giữ riêng theo §§5–6, không ship fake executable wizard để lấp gaps. Permanent loss/hostile-terminal/excess capability thiếu là release blocker, không một disclaimer thay acceptance.
+`docs/design.md` owns current landing/root/Home/leaf responsibilities và **implemented** Agreement landscape/storyboard/behavior; `style.md` owns actual recipes/scoped targets, `artwork.md` owns unchanged art/fonts/own-logo + official-source-mark provenance/policy constraints, `concept.md` owns framing và `design-audit.md` owns original findings/current resolution proof. Prior proposal/approval boundary is historical; current landscape/fix batch user-authorized. No independent rules file, public component/financial API, chain registry or duplicated protocol state machine.
 
-Integration owner đọc spec cùng nguồn canonical và style/artwork register, kiểm route/copy/state consistency và local asset availability; đây không chứng nhận protocol. Landing implementation và local build/browser smoke không bao gồm backend, wallet signing, transaction sending, commit/push hoặc deploy.
+Current owner build/TypeScript/Node24 SSR/bounded Chromium results and historical audit reproductions are canonical in design-audit; docs worker ran none. **A1 tablet contrast/A2 menu resize/A3 footer spacing are resolved within the recorded post-fix scope**, not financial/global accessibility qualification. Financial implementations/APIs aren't selected or enabled by these docs; actual validators/consumer operations must qualify before money controls. Missing hostile-terminal/excess/manual capabilities remain release blockers. No backend/wallet signing/funded transaction/build/lint/formatter/install/commit/push/deploy performed by docs worker.

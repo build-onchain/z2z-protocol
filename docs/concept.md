@@ -1,6 +1,6 @@
 # Z2Z — Concept sản phẩm và tinh thần thương hiệu
 
-**Ngày tổng hợp:** 2026-10-03. **Trạng thái:** concept/design cho giao diện web; không chứng nhận protocol đã hoàn chỉnh, deployed, audited hoặc đủ điều kiện giao dịch tiền thật.
+**Ngày tổng hợp:** 2026-10-03; current landing/document sync cập nhật2026-10-04. **Trạng thái:** bốn-beat landing và **Agreement landscape SVG/CSS2.5D** implemented, complete still + one automatic4800ms viewport-entry emphasis, không playback buttons hoặc loop. Plain public copy và separate Solana/NEAR/Hyperliquid context thay hợp đồng manual9s cũ. [Audit](design-audit.md) giữ A1–A3 history/resolved bounded proof và A4 overlap resolution. Không executable trading UI, deployment, full accessibility/performance/legal qualification.
 
 Ziquid là repository triển khai nguồn; **Z2Z là tên sản phẩm dự kiến**. Không tự mở rộng tên thành “Zcash-to-Zcash”, không rename package/binary, không suy ra trademark/domain đã được kiểm tra. [PRODUCT nguồn](../../ziquid-dex/docs/PRODUCT.md) và [ARCHITECTURE nguồn](../../ziquid-dex/docs/ARCHITECTURE.md) là căn cứ sản phẩm/hành vi. Concept này không thay đổi financial contract của các tài liệu đó.
 
@@ -8,9 +8,9 @@ Ziquid là repository triển khai nguồn; **Z2Z là tên sản phẩm dự ki�
 
 **Z2Z hướng tới một DEX có chợ P2P để người dùng đặt lệnh mua bán tài sản với nhau, nhận báo giá đổi tài sản và chủ động chọn venue ngoài; quyền xử lý tiền được kiểm theo điều kiện người dùng đã đồng ý, thay vì server tùy ý duyệt.**
 
-Câu thương hiệu đề xuất: **“A new renaissance for open markets.”**
+Hero: **“A peer-to-peer exchange, built around Zcash.”** Supporting copy: **“A DEX in development for trading directly with other people. Agree on the asset, amount and price before authorizing a trade.”** Luôn hiển thị **“In development. Trading is not available.”** H2 **“Agree on the trade. Know what you authorize.”** Public copy ngắn, concrete, nêu action/actor/limit; không slogan lặp, “concept” labels hoặc P/Q/U/S notation cho visitor. Financial specification vẫn giữ precise internal vocabulary và contract; tranh lịch sử là identity, không anonymity/recovery promise.
 
-Diễn giải tiếng Việt: **“Một thời kỳ phục hưng cho thị trường mở — quyền riêng tư và quyền quyết định thuộc về người tham gia.”** Đây là định hướng giá trị, không lời hứa mọi giao dịch đều anonymous, mọi tài sản permissionless hoặc recovery luôn thành công. [PRODUCT §1–5](../../ziquid-dex/docs/PRODUCT.md)
+Audience hiện tại là người dùng Zcash sớm và builders đang đánh giá dự án. Primary **View source** dẫn tới [public web repository](https://github.com/build-onchain/z2z-protocol), đã được main integration owner xác minh remote và HTTP200. Đây là source của website, **không** chứng minh financial protocol sibling đã public. Không dùng “Read protocol”, URL sibling đoán, hoặc relative sibling docs làm CTA công khai. Secondary **The idea** dẫn `#exchange`.
 
 ### Tự do ở đây có nghĩa gì?
 
@@ -57,10 +57,12 @@ Native flow theo thiết kế:
 5. Missing/unsupported evidence giữ `EvidencePending`, không timeout refund. `C > A` cần actual source excess-return capability/evidence, không giả Q trả lại ZEC đã tới S.
 
 Q có thể bị solver broadcast sớm gây cancellation/fee grief; anchor/branch/expiry có thể mất hiệu lực và packet không tự reprove. Không hứa fair exchange hoàn chỉnh hay recovery trong thời gian cố định. [ARCHITECTURE §7.2–7.3](../../ziquid-dex/docs/ARCHITECTURE.md)
+**Illustration không đổi sản phẩm thành generic bridge:** public scene tách **Trader / Solver** khỏi **Source / Shielded Zcash** và **Destination / Local EVM**; Trader maps Owner U, Solver maps Solver S trong financial docs, không rename financial model. Một illustrative **full-payment branch**, in development. Destination prefund/irrevocable commitment **trước executable P release**; public copy nói source payment authorization, evidence **khác funds**, destination trả existing native asset có điều kiện—not BURN/MINT, universal routing hoặc atomic cross-chain promise. Four captions/scope giữ public destination, private matching unresolved và conditional-not-available recovery. Former Offer↔Agreement↔Settlement A/B là participants trong historical figure, không chains. [Design](design.md#agreement-landscape) owns storyboard/behavior; financial mapping vẫn design §§3/6 và canonical sources, không second financial state machine/API/registry.
+
 
 ## 4. Thực tế đã có và điều chưa có
 
-**Web repository này, cập nhật 2026-10-04:** `/` đã là landing Z2Z hoàn chỉnh: artwork hero, ba cards, philosophy, intended flow, readiness, FAQ và linked museum credits; có light/dark mode và menu mobile. Chưa wallet connection, trading UI, backend giao dịch hoặc settlement. Dependency có tên Apollo/Query không phải bằng chứng đã tích hợp nghiệp vụ. [Trang hiện tại](../src/routes/index.tsx), [router](../src/router.tsx), [manifest](../package.json). Runtime evidence cho landing nằm ở [design §2.1](design.md#21-landing--giải-thích-trước-không-giả-một-sàn-live).
+**Web repository,2026-10-04:** implemented bốn beats: painting-led hero; plain exact-terms thesis + Agreement landscape, separate role-labelled ecosystem context và một Ideal City panorama; ba short native questions; own-brand footer/native credits. Root owns theme bootstrap/system observer; Home owns page/menu/theme actions và landing-only default-export [ProtocolConcept](../src/components/ProtocolConcept.tsx). Illustration `idle/playing/ended` và4800ms automatic-once emphasis là art, không financial status; no playback controls, wallet/backend/funded route. Desktop row subgrid/positive plaque-plinth gap và70rem scene stack tách52rem nav breakpoint. [Source](../src/routes/index.tsx), [root](../src/routes/__root.tsx), [manifest](../package.json). Owner build/TypeScript/browser proof và history ở [audit](design-audit.md); Apollo/Query dependency names không integration evidence.
 
 **Protocol nguồn:** status ghi nhận local crypto/proof subrelations, checked accounting, migrated market safety modules và synthetic target evidence. Đây là nguồn báo cáo, không được chạy lại trong đợt viết concept này. **Chưa có finished real-money swap/company-off drill**, các financial gates chưa Passed. [NATIVE-IMPLEMENTATION-STATUS](../../ziquid-dex/docs/NATIVE-IMPLEMENTATION-STATUS.md)
 
@@ -78,7 +80,7 @@ Colosseum campaign artwork/logos chỉ **link làm reference**: chưa có licens
 
 ## 6. Visual concept — Renaissance Exchange
 
-**Lựa chọn:** cảm hứng Phục Hưng ở bố cục/kiến trúc/nhân văn; giao diện thao tác vẫn là DEX hiện đại. Không làm “tranh cổ có nút swap” hoặc terminal neon gắn khung vàng.
+**Lựa chọn landing đã duyệt:** contemporary exchange với tranh lịch sử, không website của một historical institution. Neutral light/dark surfaces, clean sans body/controls, expressive display có chọn lọc, spacing được đo, thin rules và borderless compositions. Không toàn trang Georgia/giấy cổ/gold ornament; workspace tài chính proposed vẫn giữ Navy/sans/tabular/solid surfaces và exact-terms requirements.
 
 - **Renaissance foundation:** central perspective, nhịp arcade/cột, quảng trường và proportion tạo cảm giác trật tự, quyền tham gia, gặp gỡ. *The Ideal City* là primary reference đúng thời kỳ, không lời chứng minh lịch sử về tự do thị trường.
 - **Merchant/civic life:** piazza Venice có người và activity giúp DEX là chợ trao đổi, không palace dành riêng cho elite. Canaletto/Bellotto là thế kỷ 18, không Phục Hưng.
@@ -87,43 +89,49 @@ Colosseum campaign artwork/logos chỉ **link làm reference**: chưa có licens
 - **Financial-market continuity:** ảnh stock exchange hiện có dùng editorial về lịch sử market; không dùng làm proof decentralization/privacy hoặc background bảng lệnh.
 
 “Financial freedom” là **diễn giải thương hiệu hiện đại của Z2Z**. Banquet có thể mang nội dung tôn giáo/quý tộc; *Ideal City* nói về virtuous ruler; *Liberty Leading the People* nói về cách mạng 1830 và có violence. Không đổi ý nghĩa gốc thành “các tác phẩm này nói về DeFi”.
+**Current visual direction:** low-relief Agreement landscape, architectural SVG/CSS2.5D + upright HTML labels trên neutral surface. Approved Bellotto hero/Ideal City panorama, Instrument Serif H1/Manrope body và no-Inspiration footer retained. Four captions luôn visible; automatic4800ms emphasis starts once on eligible entry, no buttons/loop/restart. SSR/no-JS/reduced motion vẫn complete still. Offscreen/hidden/resize/reduce cancels active run to ended; [design](design.md#illustration-interface)/[style](style.md#illustration-motion) owns exact eligibility/lifecycle, audit owns exercised proof. Không WebGL/new runtime dependencies/painting parallax/logo redesign.
+
+**Truthful identity groups:** linked unchanged Zcash source mark, neutral EVM destination glyph và separate **“Ecosystem context · Not live settlement routes”** below scope. Network research: **Solana — Native adapter candidate**, **NEAR — Research context**; external venue: **Hyperliquid — External venue · testnet reads**, each links official website. No payment-plane placement/partnership/endorsement/live-support claim. [Artwork](artwork.md#functional-protocol-marks) owns exact first-party sources/hashes and restrictive/conflicting terms; asset authenticity/local-preview authorization is not trademark clearance. Human permission/terms review before public deployment. Other candidate/staging/asset/tooling inventories remain docs-only, not support wall.
+
 
 ### Hình ảnh chọn sẵn
 
-Sáu JPEG open-access là source/reference được giữ nguyên. Landing hiện dùng bốn AI-adapted ecosystem artworks qua responsive WebP tại `public/art/landing/`; logo alpha có derivatives tại `public/brand/landing/`. Credit/rights/download URL, thêm 12+ references và hạn chế nằm ở [artwork.md](artwork.md).
+Sáu JPEG open-access và toàn bộ approved adaptations được giữ làm source/reference. Landing redesign chỉ hiển thị Bellotto ecosystem hero và **một Ideal City panorama** qua responsive WebP tại `public/art/landing/`; không biến bốn tranh thành wallpaper/cards. Logo alpha đã duyệt có derivatives tại `public/brand/landing/`, không regenerate. Credit/rights/download URL, thêm 12+ references và hạn chế nằm ở [artwork.md](artwork.md).
 
-| Asset | Vai trò trong landing hiện tại |
+| Asset | Vai trò trong landing redesign |
 | --- | --- |
-| [`ideal-city.jpg`](../public/art/ideal-city.jpg) | Renaissance source cho privacy card; giữ panorama và central perspective |
-| [`bellotto-piazza-san-marco.jpg`](../public/art/bellotto-piazza-san-marco.jpg) | Source của ecosystem hero background; attribution **attributed to Bernardo Bellotto** |
-| [`canaletto-piazza-san-marco.jpg`](../public/art/canaletto-piazza-san-marco.jpg) | Source của P2P editorial card |
-| [`turner-venice.jpg`](../public/art/turner-venice.jpg) | Source của recovery editorial card |
-| [`monet-garden-antibes.jpg`](../public/art/monet-garden-antibes.jpg) | Reference dự phòng, chưa mount; Impressionist, không primary Renaissance reference |
-| [`hoffbauer-world-fair-1900.jpg`](../public/art/hoffbauer-world-fair-1900.jpg) | Reference innovation/World’s Fair, chưa mount; không logo/campaign Colosseum |
+| [`ideal-city.jpg`](../public/art/ideal-city.jpg) | Source cho một supporting panorama; giữ central perspective và panorama |
+| [`bellotto-piazza-san-marco.jpg`](../public/art/bellotto-piazza-san-marco.jpg) | Source của painting-led ecosystem hero; attribution **attributed to Bernardo Bellotto** |
+| [`canaletto-piazza-san-marco.jpg`](../public/art/canaletto-piazza-san-marco.jpg) | Master/approved derivatives retained; không visible landing card |
+| [`turner-venice.jpg`](../public/art/turner-venice.jpg) | Master/approved derivatives retained; không visible recovery card |
+| [`monet-garden-antibes.jpg`](../public/art/monet-garden-antibes.jpg) | Retained reference, không mount; Impressionist |
+| [`hoffbauer-world-fair-1900.jpg`](../public/art/hoffbauer-world-fair-1900.jpg) | Retained reference, không mount; không logo/campaign Colosseum |
 
 Ảnh người dùng #1 là campaign-style navy/gold fair poster; source/license chính xác chưa xác minh, không copy vào product. Ảnh #2 thuộc visual family Veronese banquet; **không chốt tên tác phẩm từ ảnh nhỏ**. [*Wedding at Cana*, Louvre](https://collections.louvre.fr/ark:/53355/cl010064382) và [*Feast in the House of Levi*, Accademia](https://www.gallerieaccademia.it/en/opera/convito-in-casa-di-levi/) là comparison references, không cùng tác phẩm. Hai nguồn này không cho phép suy blanket commercial reuse chỉ vì tranh gốc lâu đời.
 
 ## 7. Nguyên tắc giao diện
 
-1. **Landing kể chuyện; trading thực hiện quyền.** Landing ivory/serif/art; workspace navy, sans, tabular numbers, solid surfaces. Không paintings/texture sau amount, charts, books, form hoặc signing dialog.
+1. **Landing giải thích; trading thực hiện quyền.** Landing có contemporary neutral surfaces, painting-led hero và selective display; workspace navy, sans, tabular numbers, solid surfaces. Không paintings/texture sau amount, charts, books, form hoặc signing dialog.
 2. **Nhìn là DEX:** exact market/asset/network, bid/ask hoặc disclosed executable quotes, quantity, limit, fees, order/activity/settlement views. Không hiển thị private order data chưa được phép công khai.
 3. **Nhìn là Zcash-aware:** source shielded scope, destination visibility, prover/solver visibility, local recovery và user-held authority hiện ngay trước consent; không universal green lock.
 4. **Protocol readiness khác connection:** connected wallet không bật route chưa qualified. Khi chưa trading backend thì báo unavailable/development, không mock price/volume/fill/live balance.
 5. **Thành công = actual effects:** signed/submitted/proof accepted/credit không “paid”. Timeout không đổi quyền. Retry theo same retained intent, không blind double-submit.
-6. **Honest copy:** ưu tiên “Research / Not available / Awaiting evidence / Source shielded; destination visible” thay “100% anonymous / trustless every chain / instant refund”.
+6. **Honest public copy:** short plain sentences, concrete actors/actions/limits; source/destination labels không “concept”, Trader/Solver không financial variable names. Nói recovery conditional/not available, destination can be public và matching unresolved; không “100% anonymous / trustless every chain / instant refund”. Internal financial docs vẫn dùng exact P/Q/U/S/evidence vocabulary.
 
-Chi tiết visual tokens/component rules: [style.md](style.md). Screens, trạng thái, responsive và acceptance scenarios: [design.md](design.md). Đây là ba tài liệu hướng dẫn **implementation sau này**, không UI đã triển khai.
+Current landing thesis nói exact terms trước authorization; figure caption **“How a trade would work” / “In development · Not live”**, descriptor **“One illustrative full-payment branch”**. Four caption steps và bounded ecosystem context nằm trong product beat, không extra marketing section. Three native questions nói chưa trade/no wallet/funds, shielded-source/public-destination/matching-unresolved và website source—not complete protocol. Không complete recovery promise, serial feature cards/readiness inventory/duplicate CTA. Dark typographic Z2Z footer riêng canonical coin, actual links/native credits; no Inspiration/design-reference columns/social/legal placeholders/affiliation FAQ. Source/ecosystem identification links không public inspiration footer.
+
+Canonical ownership: **concept** owns product framing/vocabulary; [design](design.md) composition/responsibilities/storyboard/behavior; [style](style.md) actual recipes và unmeasured targets; [artwork](artwork.md) exact sources/rights/roles; [audit](design-audit.md) observed checks, A1–A3 history/resolution và A4 overlap proof. Current automatic-once/plain-copy/role-context cutover supersedes manual9s controls; trading workspace remains proposed, financial gates unchanged. Không extra rules/components/contracts system.
 
 ## 8. Source ledger và kiểm chứng
 
-Tất cả nguồn dưới đây được đọc/retrieved ngày **2026-10-03**. Publication dates không có trên trang được ghi “undated”; không thay bằng retrieval date.
+External product/event/art context dưới đây được retrieved **2026-10-03**; current sibling product/native authorities được đọc lại **2026-10-04** cho illustration scope. Publication date không bị thay bằng retrieval date. Hyperliquid/LayerZero/source-rendered comparison và supplied BURN→MINT image interpretation có ledger riêng ở [design audit](design-audit.md#reference-ledger); chúng không grants assets/fonts/financial claims/integration.
 
 | Nguồn | Date/scope | Dùng cho |
 | --- | --- | --- |
 | [Ziquid PRODUCT](../../ziquid-dex/docs/PRODUCT.md) | Design 2026-10-02 | Product identity, P2P/RFQ/external venue, privacy và scope |
-| [ARCHITECTURE](../../ziquid-dex/docs/ARCHITECTURE.md) | Living design; inspected 2026-10-03 | Native financial flow, immutable terms và states |
-| [SERVER-INDEPENDENCE](../../ziquid-dex/docs/SERVER-INDEPENDENCE.md) | Proposal 2026-10-02 | Recovery prerequisites và permission/availability distinction |
-| [NATIVE-IMPLEMENTATION-STATUS](../../ziquid-dex/docs/NATIVE-IMPLEMENTATION-STATUS.md) | Includes 2026-10-03 updates | Source-reported local implementation/evidence, unfinished financial gates |
+| [ARCHITECTURE](../../ziquid-dex/docs/ARCHITECTURE.md) | Living design; inspected 2026-10-03, selected native §§7.1–7.3 re-read2026-10-04 | Actual rule authority: prefund-before-P, evidence/asset effect, selected direct native transfer, full-payment versus other branches |
+| [SERVER-INDEPENDENCE](../../ziquid-dex/docs/SERVER-INDEPENDENCE.md) | Proposal 2026-10-02; §§1/3/5 re-read2026-10-04 | Recovery prerequisites, permission/availability distinction và no unconditional refund |
+| [NATIVE-IMPLEMENTATION-STATUS](../../ziquid-dex/docs/NATIVE-IMPLEMENTATION-STATUS.md) | Living checkpoint including2026-10-04 work; inspected2026-10-04 | Source-reported local implementation, unfinished financial gates—not new protocol checks |
 | [Z.Cash overview](https://z.cash/learn/what-is-zcash/) | Published 2023-04-10, modified 2024-09-09 | Economic freedom mission, not Z2Z guarantee |
 | [Shielded versus transparent](https://z.cash/learn/what-is-the-difference-between-shielded-and-transparent-zcash/) | Published 2023-04-10, modified 2025-10-14 | Conditional Zcash privacy |
 | [Zcash Foundation](https://zfnd.org/) | Undated mission page | Open financial networks/privacy on own terms |
@@ -131,6 +139,6 @@ Tất cả nguồn dưới đây được đọc/retrieved ngày **2026-10-03**.
 | [Colosseum branding](https://blog.colosseum.com/crypto-worlds-fair-crash-course-payment-channels/) | 2026-09-04 | Explicit Renaissance/Volta/World’s Fair inspiration |
 | [Fair page](https://colosseum.com/worldsfair) / [rules](https://colosseum.com/legal/Crypto%20World%27s%20Fair%20Hackathon%20Rules.pdf) | Page undated; rules ©2026 | Event/track context; eligibility and IP must be checked separately |
 | [The Zecathon](https://thezecathon.com/) | Undated; detailed info sign-in restricted | Separate event identity only, no copied terms |
-| [Zcash trademark policy](https://zfnd.org/zcash-trademark-policy/) | Modified 2025-10-23 | Truthful support claims, no false endorsement |
+| [Zcash trademark policy](https://zfnd.org/zcash-trademark-policy/) | Modified2025-10-23; parent retrieved current policy2026-10-04 | Specified truthful word/mark uses, own-brand prominence/no confusion, webpage logo-link requirement; current source-concept use/link recorded, not blanket permission or legal conclusion |
 
-Source docs là living files trong sibling repository; relative links cần hai repo đứng cạnh nhau. PRODUCT/ARCHITECTURE/status hiện hành ưu tiên hơn imported/historical research khi mâu thuẫn. Không kéo fee model, auction cadence, asset support hoặc custody/autonomy từ archive sang current concept. Web landing đã được build/browser smoke2026-10-04 theo design §2.1; protocol runtime không chạy trong đợt này. Artwork facts/rights riêng xem [artwork.md](artwork.md).
+Sibling relative links cần adjacent repos,không public CTA. PRODUCT/ARCHITECTURE/status ưu tiên archived research;không import fees/cadence/support/custody/autonomy. [Audit](design-audit.md) separates prior contrast/menu/footer/manual9s evidence from latest4800ms automatic-entry/end/offscreen/reduce cleanup,no-JS4steps/3official-role-links,spacing/menu/new-copy contrast/targeted A4 layout proof. Owner build/TypeScriptPASS7.79s/Node24 SSR/5SVGURLsHTTP200 are observed,not deployment/CWV/full accessibility/financial gate/legal-clearance results. Docs worker only reads/synchronizes,no checks/product edits/financial action/commit/push/deploy. [Artwork](artwork.md) retains full source/rights/history and exact-use trademark unknowns requiring human permission/terms review before public deployment.

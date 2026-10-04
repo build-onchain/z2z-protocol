@@ -53,12 +53,12 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'Z2Z — A new renaissance for open markets',
+        title: 'Z2Z — Peer-to-peer exchange, built around Zcash',
       },
       {
         name: 'description',
         content:
-          'A peer-to-peer DEX in development. Explore Z2Z’s vision for open markets, deliberate privacy, and independent user rights. Not open for trading yet.',
+          'A peer-to-peer DEX in development, built around Zcash. Agree on the asset, amount and price before authorizing a trade. Trading is not available.'
       },
     ],
     links: [
