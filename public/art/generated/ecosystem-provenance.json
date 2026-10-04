@@ -1,0 +1,276 @@
+{
+  "date": "2026-10-03",
+  "status": "Final artwork suite uses actual historical source paintings plus user-approved symbol-only circular Z2Z logo reference. No wordmark. Earlier pre-logo ecosystem drafts superseded.",
+  "provider": "cockpit-tools",
+  "requestedModel": "gpt-image-2.5",
+  "modelVerification": "Exact request selector and Cockpit catalog verified; API response model identity missing if null, no independent routing attestation.",
+  "logoInput": "public/brand/z2z-logo-light.png",
+  "documentation": "docs/artwork.md",
+  "scope": "Ecosystem motifs include current local tooling plus candidate/deferred/research directions, not supported-routes or endorsement badges.",
+  "assets": [
+    {
+      "slug": "z2z-open-markets-z2z-ecosystem",
+      "path": "public/art/generated/z2z-open-markets-z2z-ecosystem.png",
+      "input": "public/art/bellotto-piazza-san-marco.jpg",
+      "logoInput": "public/brand/z2z-logo-light.png",
+      "logoInputSha256": "4b7d334e877c17ca42dd167e28eb11a121c3380db25130a5dbd0fc572cea517a",
+      "referenceAssets": [
+        {
+          "name": "Zcash",
+          "url": "https://z.cash/wp-content/uploads/2023/03/zcash-logo.svg",
+          "page": "https://z.cash/press/",
+          "sha256": "6f6c9e5284da79f50bdb70c6c99071b2462e0dd8340315e79410641dffc339f8"
+        },
+        {
+          "name": "Hyperliquid",
+          "url": "https://app.hyperliquid.xyz/apple-touch-icon.png",
+          "page": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit",
+          "sha256": "3afc37880910082a38dfa95411f9b8d8d8147f6d0ffabbcd356e907535510ed1"
+        },
+        {
+          "name": "NEAR",
+          "url": "https://docs.near.org/mintlify-assets/_mintlify/favicons/neardocs/jx3X3HW4FX2vbKtn/_generated/favicon/android-chrome-192x192.png",
+          "page": "https://docs.near.org/",
+          "sha256": "15a653f4a105d0d8d825ac872098c622e9ccb72c51dac50e98da55fd8f0ca81f"
+        },
+        {
+          "name": "Base current Square",
+          "url": "https://brand.base.org/document/apple-touch-icon.png",
+          "page": "https://brand.base.org/core-identifiers",
+          "sha256": "3c086b400805728a106632514c2ca5217e900cccdb18b594e19799536f63320d"
+        },
+        {
+          "name": "Raydium",
+          "url": "https://mintlify.s3.us-west-1.amazonaws.com/raydium/logo/raydium-r.png",
+          "page": "https://docs.raydium.io/",
+          "sha256": "f87f5707724686c3b12e3ffa7b69a0abcb434c63a691e2f3d9567744aa56b488"
+        },
+        {
+          "name": "Succinct / SP1 tooling",
+          "url": "https://docs.succinct.xyz/img/favicon.svg",
+          "page": "https://docs.succinct.xyz/",
+          "sha256": "50601316d6a6212839cc14412851f30a5fa520311537eda7bd9f541b336e66ed"
+        },
+        {
+          "name": "NEAR Intents",
+          "url": "https://near-intents.org/favicons/near-intents/apple-touch-icon.png",
+          "page": "https://near-intents.org/",
+          "sha256": "b18cf51f85b32ab76f3b7d8ee75468fedbff34538201cf28489e411063f7ba9b"
+        }
+      ],
+      "referenceSheetSha256": "15d5a9ffae93c2a40c7af81919dfc6c3ad14dbce27b5be3f82022d1ece7b6b58",
+      "provider": "cockpit-tools",
+      "requestedModel": "gpt-image-2.5",
+      "responseModel": null,
+      "endpoint": "/v1/images/edits",
+      "requestSize": "1536x1024",
+      "width": 1660,
+      "height": 947,
+      "format": "png",
+      "bytes": 2492675,
+      "sha256": "ae2a6327d8198ddf40f182fd600950d0cc1b4733edb62ca45ae3109f0a664cbf",
+      "inputSha256": "2f2a02f5ab82ffee49b9bee0e69843d3746eddd230e0c37c58986a93dfc7e7b7",
+      "prompt": "Edit IMAGE 1, the ACTUAL historical source painting, directly. IMAGE 2 is an OFFICIAL LOGO REFERENCE SHEET for accurate silhouettes ONLY; NEVER copy its grid, text labels, background, tile boxes or layout into the painting. Preserve original buildings, geometry, scale of small simplified people, actual historical painterly brushwork, aged texture and quiet tonal range. Do not invent fantasy architecture, large photoreal people, cinematic lighting, glossy costumes or digital 3D detail. Only add a few discrete contemporary ecosystem emblems, painted into modest cloth tabs, stone plaques, wax seals or small merchant objects. Keep the historical painting dominant, icons around 25–55px in a roughly1600px-wide image, scattered with ample space rather than a logo wall. Use EXACT SHAPES from Image2: Hyperliquid asymmetric organic blob (NOT H or infinity); NEAR stylized N; Base CURRENT solid blue gently smoothed square (NOT legacy circle), preserve official blue/white/black, flat geometry, no gold bevel or custom distortion; Raydium angular R inside broken hexagonal outline with small hexagon at upper-right; Succinct stacked angular interlocking pink S/isometric emblem (SP1 toolchain, no invented SP1 logo); NEAR Intents N over four mint/white squares only when asked. Zcash struck Z exact reference. Existing motifs when requested: Ethereum faceted double-pyramid diamond, Solana three staggered slanted bars, USDC dollar symbol enclosed by two separated circular arcs inside blue coin (NOT Circle corporate logo). IMAGE 3 is the USER-APPROVED Z2Z LOGO. It is SYMBOL ONLY: amber circular ring containing two navy mirrored angular Z shapes facing an amber faceted horizontal bridge. COPY ITS DISTINCT GEOMETRY from Image3 into one small painted coin medallion or embroidered round badge. NEVER replace it with text Z2Z, 22, ZZ, the Zcash Z, infinity, arrows or another invented emblem. No Z2Z wordmark. Preserve inner proportions and outer ring; make its painted local mark around55–75px wide, slightly larger than other emblems so geometry survives. No brand name text except Z2Z; no source sheet labels, partner banners, joined logos, route arrows, guarantees, or Colosseum mark. The motifs reference documented implemented tooling AND candidate/deferred research, NOT working routes or partnership. Distinct tiny colored objects are okay but no glowing neon. Maintain source image aspect/proportions without stretching. These are AI adaptations of real paintings, not historical originals. The reference sheet and approved logo are reference inputs, not artworks to collage. Image1 remains the actual historical painting, preserving historical composition and oil/tempera/Turner brushwork. Embed the logo as naturally painted material with same scene perspective, not a glossy sticker. No text anywhere except source painting original historical inscriptions if present. OPEN MARKETS PANORAMA. Preserve this exact Bellotto-attributed Piazza San Marco view. Include SEVEN emblems scattered naturally: gold Zcash on one left arcade navy cloth; approved circular Z2Z symbol from Image3, WITHOUT LETTERING; mint Hyperliquid blob on a modest right stall plaque; black NEAR N on one different doorway stone insert; accurate flat BLUE Base Square as a small blue glazed tile set in the right arcade, not recolored/beveled; Ethereum diamond on a far-left paving relief; Solana bars on a small other merchant cloth. No new oversized stalls, monuments or banners; preserve the enormous empty civic square and original tiny people. For the own-project mark always prefer the exact Image3 symbol over any textual Z2Z mention in the scene description. Do not copy the source reference sheet label words into art.",
+      "revisedPrompt": "Edit the provided historical Piazza San Marco panorama painting directly, preserving the exact Bellotto-attributed composition, buildings, perspective, scale, small simplified figures, empty civic square, aged canvas texture, muted oil/tempera brushwork and quiet tonal range. Do not alter the architecture, do not add monuments, large stalls, large banners, photoreal people, cinematic lighting, glossy stickers, 3D effects, or any text.\n\nUse the second image only as an official silhouette/color reference for the requested small emblems; do not copy its beige background, grid, labels, tile boxes, layout, or text. Use the third image only as the approved Z2Z symbol reference.\n\nAdd exactly seven tiny, naturally painted contemporary ecosystem emblems as modest period materials, scattered with ample space, each integrated into the scene perspective and brushwork:\n1. A small gold Zcash struck-Z coin/emblem on one navy cloth tab hanging in the left arcade, about 35–45 px wide, painted and subdued.\n2. The approved Z2Z symbol from image 3 as a small painted coin medallion or embroidered round badge, about 55–75 px wide: amber circular ring, two navy mirrored angular Z shapes facing inward, amber faceted horizontal bridge. No lettering, no Z2Z text, no ZZ/22, no arrows, no infinity, not the Zcash Z.\n3. A mint Hyperliquid asymmetric organic blob, exactly the organic blob silhouette from image 2, on a modest right-side stall plaque, about 35–45 px, not an H or infinity.\n4. A black NEAR stylized N from image 2 on a different doorway stone insert, about 30–45 px.\n5. An accurate flat current Base solid blue gently smoothed square as a small blue glazed tile set in the right arcade, about 35–50 px, official blue/white/black if needed, no legacy circle, no recoloring, no bevel, no distortion.\n6. A subtle Ethereum faceted double-pyramid diamond on a far-left paving relief, about 25–40 px, stone-carved/painted and low contrast.\n7. Solana three staggered slanted bars on a small separate merchant cloth, about 30–45 px, subdued colors, painted fabric texture.\n\nKeep icons small (mostly 25–55 px in a roughly 1600 px-wide image, Z2Z slightly larger), discrete, non-glowing, flat geometry but rendered as painted material. No brand-name text anywhere, no source sheet labels, no partner banners, no joined logos, no route arrows, no guarantees, no Colosseum mark. Maintain original aspect ratio and proportions without stretching. The historical painting must remain dominant.",
+      "created": 1791046492
+    },
+    {
+      "slug": "z2z-p2p-protocols-z2z-ecosystem",
+      "path": "public/art/generated/z2z-p2p-protocols-z2z-ecosystem.png",
+      "input": "public/art/canaletto-piazza-san-marco.jpg",
+      "logoInput": "public/brand/z2z-logo-light.png",
+      "logoInputSha256": "4b7d334e877c17ca42dd167e28eb11a121c3380db25130a5dbd0fc572cea517a",
+      "referenceAssets": [
+        {
+          "name": "Zcash",
+          "url": "https://z.cash/wp-content/uploads/2023/03/zcash-logo.svg",
+          "page": "https://z.cash/press/",
+          "sha256": "6f6c9e5284da79f50bdb70c6c99071b2462e0dd8340315e79410641dffc339f8"
+        },
+        {
+          "name": "Hyperliquid",
+          "url": "https://app.hyperliquid.xyz/apple-touch-icon.png",
+          "page": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit",
+          "sha256": "3afc37880910082a38dfa95411f9b8d8d8147f6d0ffabbcd356e907535510ed1"
+        },
+        {
+          "name": "NEAR",
+          "url": "https://docs.near.org/mintlify-assets/_mintlify/favicons/neardocs/jx3X3HW4FX2vbKtn/_generated/favicon/android-chrome-192x192.png",
+          "page": "https://docs.near.org/",
+          "sha256": "15a653f4a105d0d8d825ac872098c622e9ccb72c51dac50e98da55fd8f0ca81f"
+        },
+        {
+          "name": "Base current Square",
+          "url": "https://brand.base.org/document/apple-touch-icon.png",
+          "page": "https://brand.base.org/core-identifiers",
+          "sha256": "3c086b400805728a106632514c2ca5217e900cccdb18b594e19799536f63320d"
+        },
+        {
+          "name": "Raydium",
+          "url": "https://mintlify.s3.us-west-1.amazonaws.com/raydium/logo/raydium-r.png",
+          "page": "https://docs.raydium.io/",
+          "sha256": "f87f5707724686c3b12e3ffa7b69a0abcb434c63a691e2f3d9567744aa56b488"
+        },
+        {
+          "name": "Succinct / SP1 tooling",
+          "url": "https://docs.succinct.xyz/img/favicon.svg",
+          "page": "https://docs.succinct.xyz/",
+          "sha256": "50601316d6a6212839cc14412851f30a5fa520311537eda7bd9f541b336e66ed"
+        },
+        {
+          "name": "NEAR Intents",
+          "url": "https://near-intents.org/favicons/near-intents/apple-touch-icon.png",
+          "page": "https://near-intents.org/",
+          "sha256": "b18cf51f85b32ab76f3b7d8ee75468fedbff34538201cf28489e411063f7ba9b"
+        }
+      ],
+      "referenceSheetSha256": "15d5a9ffae93c2a40c7af81919dfc6c3ad14dbce27b5be3f82022d1ece7b6b58",
+      "provider": "cockpit-tools",
+      "requestedModel": "gpt-image-2.5",
+      "responseModel": null,
+      "endpoint": "/v1/images/edits",
+      "requestSize": "1536x1024",
+      "width": 1597,
+      "height": 985,
+      "format": "png",
+      "bytes": 2650761,
+      "sha256": "584f4a8269ed03f5d2c417da8961c5224b93162b4f81f96e3a818c27cd739ae1",
+      "inputSha256": "421620346ab5b7fa084ab229148833c7880dfec0b6f53fd2a72eeb562315dfb0",
+      "prompt": "Edit IMAGE 1, the ACTUAL historical source painting, directly. IMAGE 2 is an OFFICIAL LOGO REFERENCE SHEET for accurate silhouettes ONLY; NEVER copy its grid, text labels, background, tile boxes or layout into the painting. Preserve original buildings, geometry, scale of small simplified people, actual historical painterly brushwork, aged texture and quiet tonal range. Do not invent fantasy architecture, large photoreal people, cinematic lighting, glossy costumes or digital 3D detail. Only add a few discrete contemporary ecosystem emblems, painted into modest cloth tabs, stone plaques, wax seals or small merchant objects. Keep the historical painting dominant, icons around 25–55px in a roughly1600px-wide image, scattered with ample space rather than a logo wall. Use EXACT SHAPES from Image2: Hyperliquid asymmetric organic blob (NOT H or infinity); NEAR stylized N; Base CURRENT solid blue gently smoothed square (NOT legacy circle), preserve official blue/white/black, flat geometry, no gold bevel or custom distortion; Raydium angular R inside broken hexagonal outline with small hexagon at upper-right; Succinct stacked angular interlocking pink S/isometric emblem (SP1 toolchain, no invented SP1 logo); NEAR Intents N over four mint/white squares only when asked. Zcash struck Z exact reference. Existing motifs when requested: Ethereum faceted double-pyramid diamond, Solana three staggered slanted bars, USDC dollar symbol enclosed by two separated circular arcs inside blue coin (NOT Circle corporate logo). IMAGE 3 is the USER-APPROVED Z2Z LOGO. It is SYMBOL ONLY: amber circular ring containing two navy mirrored angular Z shapes facing an amber faceted horizontal bridge. COPY ITS DISTINCT GEOMETRY from Image3 into one small painted coin medallion or embroidered round badge. NEVER replace it with text Z2Z, 22, ZZ, the Zcash Z, infinity, arrows or another invented emblem. No Z2Z wordmark. Preserve inner proportions and outer ring; make its painted local mark around55–75px wide, slightly larger than other emblems so geometry survives. No brand name text except Z2Z; no source sheet labels, partner banners, joined logos, route arrows, guarantees, or Colosseum mark. The motifs reference documented implemented tooling AND candidate/deferred research, NOT working routes or partnership. Distinct tiny colored objects are okay but no glowing neon. Maintain source image aspect/proportions without stretching. These are AI adaptations of real paintings, not historical originals. The reference sheet and approved logo are reference inputs, not artworks to collage. Image1 remains the actual historical painting, preserving historical composition and oil/tempera/Turner brushwork. Embed the logo as naturally painted material with same scene perspective, not a glossy sticker. No text anywhere except source painting original historical inscriptions if present. P2P AND SOLANA ECOSYSTEM. Preserve exact Canaletto square, campanile, church, original crowd placement and loose miniature strokes. Distribute SEVEN subtle emblems among three EXISTING foreground stalls and folios: Zcash seal and separate Z2Z seal; Solana bars on a navy stall tab; RAYDIUM R+broken hexagon accurately drawn on another small plaque; USDC blue dollar-and-arcs roundel on a different folio (no route arrow); HYPERLIQUID mint blob on distant merchant cloth; BASE flat official blue Square on a small glazed object. Raydium and USDC are documented deferred/candidate motifs, not actual exchange event. No large closeup bankers, no partner wall. For the own-project mark always prefer the exact Image3 symbol over any textual Z2Z mention in the scene description. Do not copy the source reference sheet label words into art.",
+      "revisedPrompt": "Edit the provided historical Canaletto-style painting of Piazza San Marco directly, preserving the original square, campanile, basilica, buildings, geometry, scale of small simplified figures, aged oil/tempera brushwork, canvas texture, quiet tonal range, and original composition/aspect ratio. Do not alter architecture or add large people, fantasy elements, cinematic lighting, glossy stickers, 3D rendering, banners, labels, text, grids, or logo-sheet layout.\n\nAdd exactly seven very subtle contemporary ecosystem emblems as naturally painted small objects integrated into existing foreground stalls, folios, cloth tabs, seals, plaques, and merchant items. Keep each emblem modest (about 25–55 px in a roughly 1600 px wide image), scattered with ample space; the Z2Z mark may be slightly larger (about 55–75 px) so its geometry survives. All should look hand-painted into the scene materials with local perspective, muted paint, and aged texture.\n\nPlace/distribute among three existing foreground market stalls and folios:\n1) A small Zcash wax seal or coin seal: amber/gold circle with the exact struck white Z reference, on one foreground stall/folio.\n2) A separate Z2Z seal/coin medallion using the approved symbol only: amber circular ring containing two navy mirrored angular Z shapes facing an amber faceted horizontal bridge. Preserve its proportions and outer ring; no text, no Zcash Z, no infinity, no arrows.\n3) Solana emblem on a small navy stall cloth tab: three staggered slanted bars, accurately shaped, subdued paint.\n4) Raydium emblem on another tiny stone/wood plaque: angular R inside broken hexagonal outline with a small hexagon at upper-right, using reference silhouette and colors, no labels.\n5) USDC roundel on a different folio: blue coin with dollar symbol enclosed by two separated circular arcs; not Circle corporate logo and no route arrow.\n6) Hyperliquid mint asymmetric organic blob (not H, not infinity) on distant merchant cloth, very small and subtle.\n7) Base current official solid blue gently smoothed square on a small glazed object, flat blue/white/black geometry, no legacy circle, no bevel, no distortion.\n\nNo brand-name text anywhere, no reference sheet labels, no partner banners, no joined logos, no route arrows, no guarantees, no Colosseum mark. Raydium and USDC should read only as deferred/candidate motifs, not as an actual exchange route or event. Keep the historical painting dominant and preserve miniature crowd placement and loose brushstrokes.",
+      "created": 1791046583
+    },
+    {
+      "slug": "z2z-proof-city-z2z-ecosystem",
+      "path": "public/art/generated/z2z-proof-city-z2z-ecosystem.png",
+      "input": "public/art/ideal-city.jpg",
+      "logoInput": "public/brand/z2z-logo-light.png",
+      "logoInputSha256": "4b7d334e877c17ca42dd167e28eb11a121c3380db25130a5dbd0fc572cea517a",
+      "referenceAssets": [
+        {
+          "name": "Zcash",
+          "url": "https://z.cash/wp-content/uploads/2023/03/zcash-logo.svg",
+          "page": "https://z.cash/press/",
+          "sha256": "6f6c9e5284da79f50bdb70c6c99071b2462e0dd8340315e79410641dffc339f8"
+        },
+        {
+          "name": "Hyperliquid",
+          "url": "https://app.hyperliquid.xyz/apple-touch-icon.png",
+          "page": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit",
+          "sha256": "3afc37880910082a38dfa95411f9b8d8d8147f6d0ffabbcd356e907535510ed1"
+        },
+        {
+          "name": "NEAR",
+          "url": "https://docs.near.org/mintlify-assets/_mintlify/favicons/neardocs/jx3X3HW4FX2vbKtn/_generated/favicon/android-chrome-192x192.png",
+          "page": "https://docs.near.org/",
+          "sha256": "15a653f4a105d0d8d825ac872098c622e9ccb72c51dac50e98da55fd8f0ca81f"
+        },
+        {
+          "name": "Base current Square",
+          "url": "https://brand.base.org/document/apple-touch-icon.png",
+          "page": "https://brand.base.org/core-identifiers",
+          "sha256": "3c086b400805728a106632514c2ca5217e900cccdb18b594e19799536f63320d"
+        },
+        {
+          "name": "Raydium",
+          "url": "https://mintlify.s3.us-west-1.amazonaws.com/raydium/logo/raydium-r.png",
+          "page": "https://docs.raydium.io/",
+          "sha256": "f87f5707724686c3b12e3ffa7b69a0abcb434c63a691e2f3d9567744aa56b488"
+        },
+        {
+          "name": "Succinct / SP1 tooling",
+          "url": "https://docs.succinct.xyz/img/favicon.svg",
+          "page": "https://docs.succinct.xyz/",
+          "sha256": "50601316d6a6212839cc14412851f30a5fa520311537eda7bd9f541b336e66ed"
+        },
+        {
+          "name": "NEAR Intents",
+          "url": "https://near-intents.org/favicons/near-intents/apple-touch-icon.png",
+          "page": "https://near-intents.org/",
+          "sha256": "b18cf51f85b32ab76f3b7d8ee75468fedbff34538201cf28489e411063f7ba9b"
+        }
+      ],
+      "referenceSheetSha256": "15d5a9ffae93c2a40c7af81919dfc6c3ad14dbce27b5be3f82022d1ece7b6b58",
+      "provider": "cockpit-tools",
+      "requestedModel": "gpt-image-2.5",
+      "responseModel": null,
+      "endpoint": "/v1/images/edits",
+      "requestSize": "1536x1024",
+      "width": 2063,
+      "height": 762,
+      "format": "png",
+      "bytes": 2379346,
+      "sha256": "eef07d04e26d1cc331ec898bf36900498b80169bb3c7935724ff19cfcb676313",
+      "inputSha256": "2ef374444ed4af977b2095d2893e0c0d98d8d0f569c27a207b8c15aba8230c2c",
+      "prompt": "Edit IMAGE 1, the ACTUAL historical source painting, directly. IMAGE 2 is an OFFICIAL LOGO REFERENCE SHEET for accurate silhouettes ONLY; NEVER copy its grid, text labels, background, tile boxes or layout into the painting. Preserve original buildings, geometry, scale of small simplified people, actual historical painterly brushwork, aged texture and quiet tonal range. Do not invent fantasy architecture, large photoreal people, cinematic lighting, glossy costumes or digital 3D detail. Only add a few discrete contemporary ecosystem emblems, painted into modest cloth tabs, stone plaques, wax seals or small merchant objects. Keep the historical painting dominant, icons around 25–55px in a roughly1600px-wide image, scattered with ample space rather than a logo wall. Use EXACT SHAPES from Image2: Hyperliquid asymmetric organic blob (NOT H or infinity); NEAR stylized N; Base CURRENT solid blue gently smoothed square (NOT legacy circle), preserve official blue/white/black, flat geometry, no gold bevel or custom distortion; Raydium angular R inside broken hexagonal outline with small hexagon at upper-right; Succinct stacked angular interlocking pink S/isometric emblem (SP1 toolchain, no invented SP1 logo); NEAR Intents N over four mint/white squares only when asked. Zcash struck Z exact reference. Existing motifs when requested: Ethereum faceted double-pyramid diamond, Solana three staggered slanted bars, USDC dollar symbol enclosed by two separated circular arcs inside blue coin (NOT Circle corporate logo). IMAGE 3 is the USER-APPROVED Z2Z LOGO. It is SYMBOL ONLY: amber circular ring containing two navy mirrored angular Z shapes facing an amber faceted horizontal bridge. COPY ITS DISTINCT GEOMETRY from Image3 into one small painted coin medallion or embroidered round badge. NEVER replace it with text Z2Z, 22, ZZ, the Zcash Z, infinity, arrows or another invented emblem. No Z2Z wordmark. Preserve inner proportions and outer ring; make its painted local mark around55–75px wide, slightly larger than other emblems so geometry survives. No brand name text except Z2Z; no source sheet labels, partner banners, joined logos, route arrows, guarantees, or Colosseum mark. The motifs reference documented implemented tooling AND candidate/deferred research, NOT working routes or partnership. Distinct tiny colored objects are okay but no glowing neon. Maintain source image aspect/proportions without stretching. These are AI adaptations of real paintings, not historical originals. The reference sheet and approved logo are reference inputs, not artworks to collage. Image1 remains the actual historical painting, preserving historical composition and oil/tempera/Turner brushwork. Embed the logo as naturally painted material with same scene perspective, not a glossy sticker. No text anywhere except source painting original historical inscriptions if present. PROOF AND PRIVACY CIVIC GEOMETRY. Preserve exact wide Ideal City panorama, sparse original figures, fountain, triumphal arch, amphitheater and every major perspective line. Add SEVEN SMALL details: Zcash on left residence roundel; approved circular Z2Z symbol from Image3, WITHOUT LETTERING; Succinct angular interlocking pink S from Image2 on a small separate stone-mounted enamel plaque, symbolizing SP1 TOOLING ONLY, not a privacy seal; Ethereum diamond and Solana bars on two distant column bases; black NEAR N on a far-right doorway insert; official flat blue Base Square on one tiny left corner glazed tile. Do not put a shield halo around tooling, do not invent Zoss official logo, no crowded new figures. Source panorama2.7:1 must stay wide. For the own-project mark always prefer the exact Image3 symbol over any textual Z2Z mention in the scene description. Do not copy the source reference sheet label words into art.",
+      "revisedPrompt": "Edit Image 1 directly, preserving the exact wide 2.7:1 Ideal City historical panorama, all architecture, perspective lines, fountain, arch, amphitheater, sparse tiny figures, painterly brushwork, aged texture, muted tonal range, and original composition. Do not import any grid, labels, text, tile boxes, backgrounds, or layout from reference sheets. Add exactly seven small, discreet contemporary emblem details, naturally painted into the scene as modest enamel/stone/tile details, each integrated with the same historical paint texture and perspective, no glow, no glossy sticker effect, no digital 3D, no fantasy architecture, no new large figures, no text.\n\nSeven additions only:\n1) On the left residence, add a small roundel with the exact Zcash struck Z silhouette in gold/white, scaled around 25–55 px, painted as an architectural medallion.\n2) Add one small painted coin medallion or embroidered round badge containing the approved Z2Z symbol only from Image 3: amber circular ring, two navy mirrored angular Z shapes facing inward, amber faceted horizontal bridge, preserving its distinctive proportions and outer ring; no lettering, no “Z2Z” text, no ZZ, no 22, no infinity, no arrows. Make this mark slightly larger than the others, about 55–75 px, naturally painted.\n3) Add the exact Succinct / SP1 tooling angular interlocking pink S/isometric emblem from Image 2 on a small separate stone-mounted enamel plaque; symbolizing SP1 tooling only, not a privacy seal; no shield halo.\n4) Add the Ethereum faceted double-pyramid diamond on a distant column base, tiny and painted as a discreet emblem.\n5) Add Solana three staggered slanted bars on another distant column base, tiny and painted as a discreet emblem.\n6) Add the black NEAR stylized N from Image 2 on a far-right doorway insert, tiny and flat, preserving silhouette.\n7) Add the official current Base solid blue gently smoothed square from Image 2, flat blue with white/black where appropriate, not legacy circle, on one tiny left corner glazed tile.\n\nKeep each emblem separate with ample spacing, approximately 25–55 px except the Z2Z symbol 55–75 px. Preserve the source painting dominance and historical oil/tempera brushwork. No brand name text anywhere, no labels, no banners, no route arrows, no Colosseum mark, no official-looking partnership layout, no crowded figures.",
+      "created": 1791046793
+    },
+    {
+      "slug": "z2z-recovery-harbor-z2z-ecosystem",
+      "path": "public/art/generated/z2z-recovery-harbor-z2z-ecosystem.png",
+      "input": "public/art/turner-venice.jpg",
+      "logoInput": "public/brand/z2z-logo-light.png",
+      "logoInputSha256": "4b7d334e877c17ca42dd167e28eb11a121c3380db25130a5dbd0fc572cea517a",
+      "referenceAssets": [
+        {
+          "name": "Zcash",
+          "url": "https://z.cash/wp-content/uploads/2023/03/zcash-logo.svg",
+          "page": "https://z.cash/press/",
+          "sha256": "6f6c9e5284da79f50bdb70c6c99071b2462e0dd8340315e79410641dffc339f8"
+        },
+        {
+          "name": "Hyperliquid",
+          "url": "https://app.hyperliquid.xyz/apple-touch-icon.png",
+          "page": "https://hyperliquid.gitbook.io/hyperliquid-docs/brand-kit",
+          "sha256": "3afc37880910082a38dfa95411f9b8d8d8147f6d0ffabbcd356e907535510ed1"
+        },
+        {
+          "name": "NEAR",
+          "url": "https://docs.near.org/mintlify-assets/_mintlify/favicons/neardocs/jx3X3HW4FX2vbKtn/_generated/favicon/android-chrome-192x192.png",
+          "page": "https://docs.near.org/",
+          "sha256": "15a653f4a105d0d8d825ac872098c622e9ccb72c51dac50e98da55fd8f0ca81f"
+        },
+        {
+          "name": "Base current Square",
+          "url": "https://brand.base.org/document/apple-touch-icon.png",
+          "page": "https://brand.base.org/core-identifiers",
+          "sha256": "3c086b400805728a106632514c2ca5217e900cccdb18b594e19799536f63320d"
+        },
+        {
+          "name": "Raydium",
+          "url": "https://mintlify.s3.us-west-1.amazonaws.com/raydium/logo/raydium-r.png",
+          "page": "https://docs.raydium.io/",
+          "sha256": "f87f5707724686c3b12e3ffa7b69a0abcb434c63a691e2f3d9567744aa56b488"
+        },
+        {
+          "name": "Succinct / SP1 tooling",
+          "url": "https://docs.succinct.xyz/img/favicon.svg",
+          "page": "https://docs.succinct.xyz/",
+          "sha256": "50601316d6a6212839cc14412851f30a5fa520311537eda7bd9f541b336e66ed"
+        },
+        {
+          "name": "NEAR Intents",
+          "url": "https://near-intents.org/favicons/near-intents/apple-touch-icon.png",
+          "page": "https://near-intents.org/",
+          "sha256": "b18cf51f85b32ab76f3b7d8ee75468fedbff34538201cf28489e411063f7ba9b"
+        }
+      ],
+      "referenceSheetSha256": "15d5a9ffae93c2a40c7af81919dfc6c3ad14dbce27b5be3f82022d1ece7b6b58",
+      "provider": "cockpit-tools",
+      "requestedModel": "gpt-image-2.5",
+      "responseModel": null,
+      "endpoint": "/v1/images/edits",
+      "requestSize": "1536x1024",
+      "width": 1452,
+      "height": 1083,
+      "format": "png",
+      "bytes": 2555686,
+      "sha256": "bc842fea0631793be38eda546dfc1ceeeceb6686d0fc33b6c23ca27f9ae37d53",
+      "inputSha256": "05c6f7155da340471d9280e5be5ba9f01ba1589a83802f4fe9e396480a72e871",
+      "prompt": "Edit IMAGE 1, the ACTUAL historical source painting, directly. IMAGE 2 is an OFFICIAL LOGO REFERENCE SHEET for accurate silhouettes ONLY; NEVER copy its grid, text labels, background, tile boxes or layout into the painting. Preserve original buildings, geometry, scale of small simplified people, actual historical painterly brushwork, aged texture and quiet tonal range. Do not invent fantasy architecture, large photoreal people, cinematic lighting, glossy costumes or digital 3D detail. Only add a few discrete contemporary ecosystem emblems, painted into modest cloth tabs, stone plaques, wax seals or small merchant objects. Keep the historical painting dominant, icons around 25–55px in a roughly1600px-wide image, scattered with ample space rather than a logo wall. Use EXACT SHAPES from Image2: Hyperliquid asymmetric organic blob (NOT H or infinity); NEAR stylized N; Base CURRENT solid blue gently smoothed square (NOT legacy circle), preserve official blue/white/black, flat geometry, no gold bevel or custom distortion; Raydium angular R inside broken hexagonal outline with small hexagon at upper-right; Succinct stacked angular interlocking pink S/isometric emblem (SP1 toolchain, no invented SP1 logo); NEAR Intents N over four mint/white squares only when asked. Zcash struck Z exact reference. Existing motifs when requested: Ethereum faceted double-pyramid diamond, Solana three staggered slanted bars, USDC dollar symbol enclosed by two separated circular arcs inside blue coin (NOT Circle corporate logo). IMAGE 3 is the USER-APPROVED Z2Z LOGO. It is SYMBOL ONLY: amber circular ring containing two navy mirrored angular Z shapes facing an amber faceted horizontal bridge. COPY ITS DISTINCT GEOMETRY from Image3 into one small painted coin medallion or embroidered round badge. NEVER replace it with text Z2Z, 22, ZZ, the Zcash Z, infinity, arrows or another invented emblem. No Z2Z wordmark. Preserve inner proportions and outer ring; make its painted local mark around55–75px wide, slightly larger than other emblems so geometry survives. No brand name text except Z2Z; no source sheet labels, partner banners, joined logos, route arrows, guarantees, or Colosseum mark. The motifs reference documented implemented tooling AND candidate/deferred research, NOT working routes or partnership. Distinct tiny colored objects are okay but no glowing neon. Maintain source image aspect/proportions without stretching. These are AI adaptations of real paintings, not historical originals. The reference sheet and approved logo are reference inputs, not artworks to collage. Image1 remains the actual historical painting, preserving historical composition and oil/tempera/Turner brushwork. Embed the logo as naturally painted material with same scene perspective, not a glossy sticker. No text anywhere except source painting original historical inscriptions if present. RECOVERY AND EXTERNAL ECOSYSTEM CONTEXT. Preserve exact Turner boats, original water light, painterly indistinct skyline and airy sky. In one existing near boat, modest owner-held leather folio has separate Zcash roundel and tiny Z2Z medallion. A little Succinct interlocking S on a separate book clasp suggests retained proving tools. Ethereum diamond and Solana three bars on two different small boat fittings. On a DIFFERENT peripheral merchant boat across the canal place a small NEAR INTENTS green-white N plaque and mint Hyperliquid blob on its folded cloth, as external/deferred context, visibly separated from owner recovery tools; it must not imply Intents provides native P/Q refund. Do not create a photoreal traveler/workshop or sharpen Turner into digital detail. For the own-project mark always prefer the exact Image3 symbol over any textual Z2Z mention in the scene description. Do not copy the source reference sheet label words into art.",
+      "revisedPrompt": "Edit the provided Image 1 historical Turner-style Venetian canal painting directly, preserving the original aspect ratio, buildings, boats, water light, airy sky, aged surface texture, quiet tonal range, painterly brushwork, small simplified people, and all original geometry. Do not add fantasy architecture, large photoreal people, cinematic lighting, glossy stickers, digital 3D detail, source-sheet grids, labels, tile boxes, backgrounds, banners, route arrows, partner-wall layout, or any new text.\n\nUse Image 2 only as logo silhouette/color reference, never as a collage. Use Image 3 as the exact Z2Z symbol reference.\n\nAdd only a few tiny, discrete contemporary ecosystem emblems as naturally painted material objects integrated into the scene perspective, with worn oil/tempera brush texture:\n\n1) In one existing near boat, add a modest owner-held leather folio. On/near this folio paint two separate small round medallions: a Zcash roundel with the exact struck Z shape from Image 2, and a slightly larger Z2Z medallion about 55–75px wide in a roughly 1600px-wide output. The Z2Z medallion must copy Image 3 symbol geometry: amber circular ring, two navy mirrored angular Z shapes facing inward, and an amber faceted horizontal bridge. No Z2Z text, no ZZ/22, no infinity, no arrows, no Zcash substitution. Keep as a painted coin/embroidered badge, not glossy.\n\n2) On a separate small book clasp in that same near-boat recovery-tool area, paint a tiny Succinct/SP1 emblem using the stacked angular interlocking pink isometric S shape from Image 2. No invented SP1 text/logo.\n\n3) Put an Ethereum faceted double-pyramid diamond and Solana three staggered slanted bars on two different small boat fittings, very small and separated, around 25–55px each, painted as modest marks on metal/wood fittings.\n\n4) On a different peripheral merchant boat across the canal, visibly separated from the owner recovery tools, add a small NEAR Intents green-white plaque: stylized NEAR N over four mint/white squares as in Image 2, and a mint Hyperliquid asymmetric organic blob on folded cloth nearby. These represent external/deferred context only; keep physically separated from the near boat and do not imply a route. Use the Hyperliquid organic blob, not an H or infinity.\n\nAll emblems should be scattered with ample space, subtle, locally painted into cloth tabs, plaques, seals, folio/book fittings, coins, or merchant objects; preserve official silhouettes and colors as much as possible while matching the historical paint texture. Keep the painting dominant and Turner-like. No added brand-name text anywhere.",
+      "created": 1791046867
+    }
+  ]
+}

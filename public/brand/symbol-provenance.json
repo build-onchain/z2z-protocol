@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-03",
+  "project": "Z2Z",
+  "status": "Symbol-only concept requested by user; no wordmark. Not yet approved for artwork embedding.",
+  "provider": "cockpit-tools",
+  "requestedModel": "gpt-image-2.5",
+  "responseModel": null,
+  "endpoint": "/v1/images/edits",
+  "input": "public/brand/z2z-logo-concept.png",
+  "inputSha256": "2c2f4ec1f769f56f5768f48a8a06d094a735e98d24012a4efc680c8ff2786692",
+  "path": "public/brand/z2z-symbol-concept.png",
+  "whitePreviewPath": "public/brand/z2z-symbol-concept-white.png",
+  "width": 1254,
+  "height": 1254,
+  "format": "png",
+  "hasAlpha": true,
+  "sha256": "8fa4a991ecb6cbd38e2cb3adb4c4853cf07bd355aa3d405ab75a9546d081328e",
+  "whitePreviewSha256": "6b746ce3c8eaf2bc51d03bbff8b3bf60001ad8eb13493a5f26016570b25d77d4",
+  "prompt": "EDIT the uploaded Z2Z logo image. Keep ONLY the existing top SYMBOL: the two mirrored dark navy angular Z-shaped forms and the small horizontal amber faceted bridge in the center. Preserve those exact shapes, relative proportions, colors and negative spaces; do not redesign or simplify them into a different mark. Completely REMOVE the separate Z2Z text wordmark underneath, leaving no lettering, shadows or remnants. Recenter the single preserved symbol in a square canvas with balanced clear space. Transparent background. Flat precise two-color logo, navy #18262F and amber #E4B55F, sharp edges, no gradient, bevel, texture, mockup, border or additional text. Output one SYMBOL ONLY, no wordmark anywhere.",
+  "revisedPrompt": "Edit the provided Z2Z logo image: keep only the existing top symbol consisting of the two mirrored dark navy angular Z-shaped forms and the small horizontal amber faceted bridge in the center. Preserve the exact shapes, relative proportions, colors, and negative spaces from the original symbol. Completely remove the separate Z2Z text wordmark underneath, leaving no lettering, shadows, or remnants. Recenter the preserved symbol in a square canvas with balanced clear space. Transparent background. Flat precise two-color logo using navy #18262F and amber #E4B55F, sharp edges, no gradient, bevel, texture, mockup, border, or additional text. Output one symbol only, no wordmark anywhere.",
+  "limitations": "AI raster concept, not SVG or trademark clearance. Exact model requested; routing identity absent if responseModel null."
+}

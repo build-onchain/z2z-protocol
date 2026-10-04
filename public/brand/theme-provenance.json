@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-03",
+  "source": "public/brand/z2z-coin-symbol.png",
+  "sourceSha256": "1e77003c0ba21e45428e8d5bd8907881bd00e8ea53875f5490f5af4d8e0817cf",
+  "status": "User-approved circular symbol, no wordmark. Light/dark theme assets.",
+  "variants": [
+    {
+      "theme": "light",
+      "path": "public/brand/z2z-logo-light.png",
+      "preview": "public/brand/z2z-logo-light-preview.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "sha256": "4b7d334e877c17ca42dd167e28eb11a121c3380db25130a5dbd0fc572cea517a",
+      "previewSha256": "7936036a3566899ea2e147283f92a5afd230890b716c0a4bc33d74d9e1038730",
+      "method": "Exact alpha/silhouette retained from approved gpt-image-2.5 logo; deterministic palette remap, no model re-generation or substitution",
+      "background": "#F4EBDD"
+    },
+    {
+      "theme": "dark",
+      "path": "public/brand/z2z-logo-dark.png",
+      "preview": "public/brand/z2z-logo-dark-preview.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "sha256": "021837705f262bf70442ae0b1e1174c00e3aa979a5fab46c0977a058249e1951",
+      "previewSha256": "3507d76c68328741ff34cff3ebd2b4b948bfa281e5b3b16bac887c840fa8442f",
+      "method": "Exact alpha/silhouette retained from approved gpt-image-2.5 logo; deterministic palette remap, no model re-generation or substitution",
+      "background": "#172B3A"
+    }
+  ]
+}

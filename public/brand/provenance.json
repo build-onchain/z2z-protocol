@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-03",
+  "project": "Z2Z",
+  "status": "Concept pending user selection; do not embed into paintings until approved",
+  "provider": "cockpit-tools",
+  "requestedModel": "gpt-image-2.5",
+  "responseModel": null,
+  "endpoint": "/v1/images/generations",
+  "requestSize": "1024x1024",
+  "path": "public/brand/z2z-logo-concept.png",
+  "whitePreviewPath": "public/brand/z2z-logo-concept-white.png",
+  "format": "png",
+  "width": 1254,
+  "height": 1254,
+  "hasAlpha": true,
+  "sha256": "2c2f4ec1f769f56f5768f48a8a06d094a735e98d24012a4efc680c8ff2786692",
+  "whitePreviewSha256": "6149610ae321ad340b654c08769245a96501125ec7b22c652e8d05090f237e76",
+  "prompt": "Design ONE original professional logo for the project named exactly Z2Z, a peer-to-peer financial exchange concept focused on privacy, explicit bilateral consent and owner-held authority. Inspired ONLY by Zcash visual principles: strong compact geometry, clarity, near-black plus restrained amber. Do NOT copy the Zcash struck-Z symbol, its currency bars, coin circle, trademark, or official logo. Create a DISTINCT Z2Z identity. Use two complementary angular Z-shaped paths facing toward a shared open center, conveying two independent peers exchanging directly; balanced geometry, intentional negative space, a small bridge-like central connection rather than chain links or a padlock. The symbol must be coherent at favicon size, no tiny detail or decorative engraving. Place the exact wordmark Z2Z below the symbol in bold custom geometric sans-serif, with a CLEAR numeral 2 in the middle, sharp, legible, correctly spelled. ONE symbol and ONE wordmark, not a grid or multiple proposals. The mark is amber #E4B55F with near-black #18262F structure; wordmark near-black. Pure solid white background. Flat two-color vector-style presentation, clean precise curves/corners, no gradients, texture, oil painting, gold foil, shadows, bevels, 3D, mockup objects, slogan, border, crypto coin, dollar sign, generic shield, infinity, watermark, sample labels or additional text. Quiet Renaissance proportion comes from symmetry and ordered space, NOT ornate calligraphy or classical pillars. Aim for a memorable clean own-brand mark distinct from Zcash/Ethereum/Solana/Base and suitable to embed into historical artworks later. Centered square1024x1024, generous clear space, symbol approximately400px wide, wordmark approximately340px wide below. This is a design proposal, no partnership or trademark-clearance claim.",
+  "revisedPrompt": "Design ONE original professional logo for a project named exactly \"Z2Z\". Peer-to-peer financial exchange concept focused on privacy, explicit bilateral consent, and owner-held authority. Inspired only by broad visual principles of strong compact geometry, clarity, near-black plus restrained amber; do NOT copy or resemble any existing Zcash struck-Z, currency bars, coin circle, trademark, or official logo.\n\nCreate a distinct identity: one centered symbol composed of two complementary angular Z-shaped paths facing toward a shared open center, conveying two independent peers exchanging directly. Balanced symmetry, intentional negative space, and a small bridge-like central connection; absolutely no chain links, padlock, shield, infinity sign, dollar sign, coin, or generic crypto motifs. Coherent at favicon size; no tiny detail, no decorative engraving.\n\nBelow the symbol place the exact wordmark \"Z2Z\" in bold custom geometric sans-serif, with a CLEAR numeral 2 in the middle, sharp, legible, correctly spelled. ONE symbol and ONE wordmark only, not multiple proposals or a grid.\n\nStyle: flat two-color vector logo, amber #E4B55F with near-black #18262F structure; wordmark near-black. Pure solid white background. Clean precise corners and curves. No gradients, texture, oil painting, gold foil, shadows, bevels, 3D, mockup objects, slogan, border, watermark, sample labels, or additional text. Quiet Renaissance-like proportion via symmetry and ordered space only, no ornate calligraphy or classical pillars.\n\nCanvas: centered square 1024x1024, generous clear space. Symbol approximately 400px wide in upper center. Wordmark approximately 340px wide below. Professional brand design proposal, distinct from Zcash/Ethereum/Solana/Base.",
+  "created": 1791045757,
+  "limitations": "Raster AI logo concept, not SVG/vector master or trademark-clearance result. Zcash-inspired principles, distinct own-brand geometry, no Zcash mark copied. Exact model selector requested; API response model identity absent if null."
+}

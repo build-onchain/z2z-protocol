@@ -1,0 +1,79 @@
+{
+  "source": "public/art/generated/ecosystem-provenance.json",
+  "purpose": "Responsive WebP derivatives for approved full landing; source artwork retained unmodified.",
+  "quality": 86,
+  "assets": [
+    {
+      "name": "hero",
+      "path": "public/art/landing/hero-800.webp",
+      "source": "public/art/generated/z2z-open-markets-z2z-ecosystem.png",
+      "width": 800,
+      "height": 456,
+      "bytes": 61588,
+      "sha256": "1b02d254f440c17cf3c011a911f8001442abb717465590500e32fdc7d355e8a6"
+    },
+    {
+      "name": "hero",
+      "path": "public/art/landing/hero-1660.webp",
+      "source": "public/art/generated/z2z-open-markets-z2z-ecosystem.png",
+      "width": 1660,
+      "height": 947,
+      "bytes": 221556,
+      "sha256": "ce6818c18223c814d64255fa23447e6062bfd2abf2c236cee233b40103b07db5"
+    },
+    {
+      "name": "p2p",
+      "path": "public/art/landing/p2p-640.webp",
+      "source": "public/art/generated/z2z-p2p-protocols-z2z-ecosystem.png",
+      "width": 640,
+      "height": 395,
+      "bytes": 50000,
+      "sha256": "275ac6a600e92833a751683e7a94052548fdb9e645da34f86a7d079d9027411d"
+    },
+    {
+      "name": "p2p",
+      "path": "public/art/landing/p2p-1200.webp",
+      "source": "public/art/generated/z2z-p2p-protocols-z2z-ecosystem.png",
+      "width": 1200,
+      "height": 740,
+      "bytes": 163536,
+      "sha256": "5bc6d817aab1ee27162cbd5cec16a334ea5fc5080d1ef2d48a72bc6c930e348c"
+    },
+    {
+      "name": "privacy",
+      "path": "public/art/landing/privacy-640.webp",
+      "source": "public/art/generated/z2z-proof-city-z2z-ecosystem.png",
+      "width": 640,
+      "height": 236,
+      "bytes": 32274,
+      "sha256": "d0a78b4e31e5786744f63c9fc4bb88de5da5b0151744576483e4d4a66ff16cfa"
+    },
+    {
+      "name": "privacy",
+      "path": "public/art/landing/privacy-1600.webp",
+      "source": "public/art/generated/z2z-proof-city-z2z-ecosystem.png",
+      "width": 1600,
+      "height": 591,
+      "bytes": 146324,
+      "sha256": "c3c30b462ff861f2b5f98958aa3c4a6abc26a304aae16b6702a62d20304875d2"
+    },
+    {
+      "name": "recovery",
+      "path": "public/art/landing/recovery-640.webp",
+      "source": "public/art/generated/z2z-recovery-harbor-z2z-ecosystem.png",
+      "width": 640,
+      "height": 477,
+      "bytes": 69438,
+      "sha256": "dfe08140b52626b40e1f0334490eca355d632de734a7e7235b0ab6298e30d601"
+    },
+    {
+      "name": "recovery",
+      "path": "public/art/landing/recovery-1200.webp",
+      "source": "public/art/generated/z2z-recovery-harbor-z2z-ecosystem.png",
+      "width": 1200,
+      "height": 895,
+      "bytes": 197556,
+      "sha256": "a46092ba2fbeced8e0ba287af30b40f9f6711f5628ebf24573161052389d3a81"
+    }
+  ]
+}

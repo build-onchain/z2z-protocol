@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-03",
+  "project": "Z2Z",
+  "status": "Approved inner symbol with user-requested circular coin ring; circular revision awaiting review before artwork embedding.",
+  "provider": "cockpit-tools",
+  "requestedModel": "gpt-image-2.5",
+  "responseModel": null,
+  "endpoint": "/v1/images/edits",
+  "input": "public/brand/z2z-symbol-concept.png",
+  "inputSha256": "8fa4a991ecb6cbd38e2cb3adb4c4853cf07bd355aa3d405ab75a9546d081328e",
+  "path": "public/brand/z2z-coin-symbol.png",
+  "whitePreviewPath": "public/brand/z2z-coin-symbol-white.png",
+  "width": 1254,
+  "height": 1254,
+  "format": "png",
+  "hasAlpha": true,
+  "sha256": "1e77003c0ba21e45428e8d5bd8907881bd00e8ea53875f5490f5af4d8e0817cf",
+  "whitePreviewSha256": "270301f597a940cd51826cc107538e976a8652ff54f6c4e41c037e0f5f0edce1",
+  "prompt": "EDIT the uploaded symbol-only Z2Z logo. Preserve the exact distinctive symbol: TWO dark navy mirrored angular Z forms around the small horizontal amber faceted bridge, same internal proportions and negative spaces. The user approves this symbol. Add ONE clean perfect CIRCULAR COIN RING around it, in restrained amber #E4B55F, inspired by the simple circular cryptocurrency badges of Zcash and Bitcoin but DISTINCT: do NOT copy their struck Z, Bitcoin B, currency strokes, typefaces or brand lockups. Use an amber ring thickness around5-6 percent of circle diameter, with a small clear gap between ring and inner symbol; uniformly scale the inner symbol down so ALL its tips fit comfortably within the circle. Center the whole composition precisely, balanced clear space. Inside circle background and outside background TRANSPARENT. Flat vector-style two-color graphic, navy #18262F and amber #E4B55F. No coin 3D perspective, bevel, embossed texture, metallic shine, gradients, shadows, mockups, dotted edge, text, wordmark, letters underneath, tagline or watermark. ONE single symbol enclosed by ONE circular ring, front-facing. Keep logo readable small. Square canvas, the circular mark about75 percent canvas width. NO Z2Z text anywhere; only the approved geometric symbol and new ring.",
+  "revisedPrompt": "Edit the uploaded Z2Z symbol-only logo while preserving the exact approved distinctive inner symbol: two dark navy mirrored angular Z forms around a small horizontal amber faceted bridge, maintaining the same internal proportions, negative spaces, sharp geometry, and colors navy #18262F and amber #E4B55F. Uniformly scale the inner symbol down so all tips fit comfortably inside a new circular border. Add exactly ONE clean perfect circular coin-style ring around the symbol, front-facing, centered, flat vector style. Ring color restrained amber #E4B55F, thickness about 5–6% of circle diameter, with a small clear transparent gap between ring and symbol. Circle mark should occupy about 75% of a square canvas. Background inside and outside the ring must be transparent. No text, no Z2Z lettering, no wordmark, no tagline, no watermark. Do not copy Zcash or Bitcoin marks: no struck Z, no Bitcoin B, no currency strokes, no typefaces, no brand lockups. No 3D perspective, bevel, embossing, metallic shine, gradients, shadows, mockups, dotted edge, texture, or extra elements. Single centered symbol enclosed by one circular amber ring, readable at small sizes.",
+  "limitations": "AI raster logo, not SVG/vector master or trademark clearance. Exact model requested; provider response model identity absent if null."
+}

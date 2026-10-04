@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-03",
+  "status": "Transparent background verified; light/dark tight export variants of user-approved logo",
+  "assets": [
+    {
+      "theme": "light",
+      "path": "public/brand/z2z-logo-light-transparent.png",
+      "width": 1011,
+      "height": 995,
+      "hasAlpha": true,
+      "sha256": "4004d2693a79174a5bc579918ddf9a25f228336bdad1507b959492d14b4f1334",
+      "source": "public/brand/z2z-logo-light.png",
+      "crop": {
+        "left": 121,
+        "top": 140,
+        "width": 1011,
+        "height": 995
+      },
+      "note": "Same approved symbol and actual alpha, transparent inner/outer space, clear padding24px; not white/navy preview"
+    },
+    {
+      "theme": "dark",
+      "path": "public/brand/z2z-logo-dark-transparent.png",
+      "width": 1011,
+      "height": 995,
+      "hasAlpha": true,
+      "sha256": "8afb6352790d2ea3b2e23f4244f227887c5f2b8f4af897f12f31d04908578eec",
+      "source": "public/brand/z2z-logo-dark.png",
+      "crop": {
+        "left": 121,
+        "top": 140,
+        "width": 1011,
+        "height": 995
+      },
+      "note": "Same approved symbol and actual alpha, transparent inner/outer space, clear padding24px; not white/navy preview"
+    }
+  ]
+}
